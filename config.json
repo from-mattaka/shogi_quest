@@ -1,0 +1,37 @@
+{
+  "player_name": "qwalks",
+  "api_base": "https://c-loft.com/shogi/quest",
+  "time_modes": {
+    "shogi10": "shogi10",
+    "shogi5": "shogi",
+    "shogi2": "shogi2"
+  },
+  "request_interval_sec": 2,
+  "retry_wait_sec": 3,
+  "timeout_sec": 30,
+  "max_csa_per_run": 300,
+  "data_dir": "data",
+  "recent_games_in_readme": 20,
+  "analysis": {
+    "analysis_version": 1,
+    "threads": 8,
+    "hash_mb": 512,
+    "pass1": {
+      "movetime_ms": 150,
+      "nodes": null
+    },
+    "pass2": {
+      "movetime_ms": 2000,
+      "nodes": null,
+      "multipv": 3
+    },
+    "winrate_scale": 600,
+    "thresholds": {
+      "dubious": 0.05,
+      "mistake": 0.1,
+      "blunder": 0.2
+    },
+    "pv_moves": 6,
+    "skip_opening_plies": 0
+  }
+}

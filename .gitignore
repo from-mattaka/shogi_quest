@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+
+# 将棋エンジン・評価関数（engine/setup_engine.py が取得・ビルド。Git には入れない）
+.engine/
+
+# ローカルの秘密情報（使う場合）
+.env

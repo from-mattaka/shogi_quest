@@ -1,0 +1,22 @@
+{
+  "_comment": "解析エンジンと評価関数の取得元を固定するファイル。変更したら `python engine/setup_engine.py` を実行する。手順は docs/engine_model.md",
+  "engine": {
+    "name": "YaneuraOu",
+    "repo": "https://github.com/yaneurao/YaneuraOu.git",
+    "tag": "V9.00",
+    "commit": "a5ee2786c0030edc7d4a1cdfe94b04dffec55493",
+    "target_cpu": "AVX2",
+    "compiler": "g++"
+  },
+  "active_model": "suisho5",
+  "models": {
+    "suisho5": {
+      "display_name": "水匠5",
+      "edition": "YANEURAOU_ENGINE_NNUE",
+      "source_page": "https://github.com/yaneurao/YaneuraOu/releases/tag/suisho5",
+      "url": "https://github.com/yaneurao/YaneuraOu/releases/download/suisho5/Suisho5.7z",
+      "archive_sha256": "6734e3a3d28e67b9206c3442f6d10f16148138327dff811cadedfcf581f79809",
+      "nn_bin_sha256": "768068f0d534a0603a5d38bcd143de6bbca820d5f1c95a14d40863e5b7892d76"
+    }
+  }
+}

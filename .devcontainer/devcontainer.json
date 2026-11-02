@@ -1,0 +1,13 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/base:noble",
+    "features": {
+        // Python をイメージに含め、コンテナを作り直しても消えないようにする
+        "ghcr.io/devcontainers/features/python:1": {
+            "version": "3.12",
+            "installTools": false
+        }
+    },
+    // Python パッケージを .venv に入れる（ワークスペース内なので再作成後も残る）。
+    // 将棋エンジンのビルド・評価関数の取得は自動では行わない（docs/mistake_analysis.md の手順で手動実行）
+    "postCreateCommand": "( [ -x .venv/bin/python ] && .venv/bin/python -V >/dev/null 2>&1 || python3 -m venv --clear .venv ) && .venv/bin/pip install -q -r requirements.txt -r requirements-analysis.txt"
+}

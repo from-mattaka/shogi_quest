@@ -1,0 +1,39 @@
+'Shogi Quest
+N+相手(1640)
+N-qwalks(1716)
+P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
+P2 * -HI *  *  *  *  * -KA * 
+P3-FU-FU-FU-FU-FU-FU-FU-FU-FU
+P4 *  *  *  *  *  *  *  *  * 
+P5 *  *  *  *  *  *  *  *  * 
+P6 *  *  *  *  *  *  *  *  * 
+P7+FU+FU+FU+FU+FU+FU+FU+FU+FU
+P8 * +KA *  *  *  *  * +HI * 
+P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
++
++2726FU
+-8384FU
++2625FU
+-8485FU
++2524FU
+-2324FU
++6978KI
+-4132KI
++2824HI
+-1314FU
++5958OU
+-0023FU
++2426HI
+-5152OU
++9796FU
+-9394FU
++3938GI
+-7172GI
++7776FU
+-8586FU
++8786FU
+-8286HI
++4746FU
+-3334FU
++3847GI
+-2288UM
