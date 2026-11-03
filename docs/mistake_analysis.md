@@ -167,6 +167,8 @@ git add README.md docs/ai/AI_CONTEXT.md
 
 新しい対局を解析したら、`make_quiz.py` を実行し直すと問題が増えます。
 
+GitHub Pages でも公開しています（URL は `config.json` の `quiz_url`。README の先頭にリンクが出ます。空にするとリンクは出ません）。Pages に反映するには、`make_quiz.py` を実行したあと `quiz/index.html` をコミットして push します。リポジトリ直下の `.nojekyll` は、Pages が Markdown などを変換せずにそのまま公開するためのファイルです。
+
 ## 4. 設定（`config.json` の `analysis`）
 
 | キー | 既定値 | 意味 |

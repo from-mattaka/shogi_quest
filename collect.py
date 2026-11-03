@@ -116,7 +116,7 @@ def main() -> int:
         log.info("新規対局なし")
     # README / AI_CONTEXT は毎回作り直す（ローカルで追加された AI 解析結果も反映される）。
     # 中身はデータだけで決まるので、変化が無ければ差分も出ずコミットされない。
-    store.write_readme(user_id, cfg.get("recent_games_in_readme", 20))
+    store.write_readme(user_id, cfg.get("recent_games_in_readme", 20), cfg.get("quiz_url"))
     store.write_ai_context(user_id)
 
     return 1 if failed_modes == len(modes) else 0

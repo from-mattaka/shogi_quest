@@ -116,7 +116,7 @@ def save_game(meta: dict, game, ga, p, info) -> dict:
 
 
 def regenerate(store: Storage, cfg: dict) -> None:
-    store.write_readme(cfg["player_name"], cfg.get("recent_games_in_readme", 20))
+    store.write_readme(cfg["player_name"], cfg.get("recent_games_in_readme", 20), cfg.get("quiz_url"))
     store.write_ai_context(cfg["player_name"])
     log.info("README.md / %s を更新しました", Storage.AI_CONTEXT_REL)
 

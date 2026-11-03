@@ -106,7 +106,7 @@ def migrate(root: Path, me: str) -> None:
     # 5) README / AI_CONTEXT を作り直す
     cfg = json.loads((root / "config.json").read_text(encoding="utf-8"))
     store = Storage(root, cfg.get("data_dir", "data"))
-    store.write_readme(me, cfg.get("recent_games_in_readme", 20))
+    store.write_readme(me, cfg.get("recent_games_in_readme", 20), cfg.get("quiz_url"))
     store.write_ai_context(me)
     print(f"CSA {len(new_hash)} 件、CSV {len(rows)} 行を処理しました")
 

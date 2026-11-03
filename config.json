@@ -12,6 +12,7 @@
   "max_csa_per_run": 300,
   "data_dir": "data",
   "recent_games_in_readme": 20,
+  "quiz_url": "https://from-mattaka.github.io/shogi_quest/quiz/",
   "analysis": {
     "analysis_version": 1,
     "threads": 8,

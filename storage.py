@@ -186,8 +186,9 @@ class Storage:
         return f"[{_md(a['model_name'])}]({link_prefix}{an.report_rel(game_id)}) {counts}"
 
     # ---------------------------------------------------------- README.md
-    def write_readme(self, player: str, recent_n: int = 20) -> None:
+    def write_readme(self, player: str, recent_n: int = 20, quiz_url: str | None = None) -> None:
         by_mode = self._by_mode()
+        quiz = f"\n\n**[次の一手 問題集]({quiz_url})** — 悪手検出で見つかった局面をブラウザで解けます（GitHub Pages）" if quiz_url else ""
         L = [
             f"# 将棋クエスト対局記録 — {player}",
             "",
@@ -195,7 +196,7 @@ class Storage:
             "",
             "> 対局は GitHub Actions が毎日自動収集し、悪手検出（将棋AIによる解析）はローカルで手動実行しています。生データ: "
             f"[`data/games_summary.csv`](data/games_summary.csv)　AI 相談用: [`AI_CONTEXT.md`]({self.AI_CONTEXT_REL})　"
-            "悪手検出の説明: [`docs/mistake_analysis.md`](docs/mistake_analysis.md)",
+            "悪手検出の説明: [`docs/mistake_analysis.md`](docs/mistake_analysis.md)" + quiz,
             "",
             "## 持ち時間別サマリー",
             "",
