@@ -1,6 +1,6 @@
 # 将棋クエスト対局記録 — qwalks
 
-最終更新: 2026-11-06T01:50:41+09:00　/　総対局数: **47**　/　悪手検出済み: **47**
+最終更新: 2026-11-06T02:46:03+09:00　/　総対局数: **52**　/　悪手検出済み: **47**
 
 > 対局は GitHub Actions が毎日自動収集し、悪手検出（将棋AIによる解析）はローカルで手動実行しています。生データ: [`data/games_summary.csv`](data/games_summary.csv)　AI 相談用: [`AI_CONTEXT.md`](docs/ai/AI_CONTEXT.md)　悪手検出の説明: [`docs/mistake_analysis.md`](docs/mistake_analysis.md)
 
@@ -11,7 +11,7 @@
 | 持ち時間 | 対局数 | 勝 | 負 | 分 | 勝率 | 最新レート | 平均手数 |
 |---|--:|--:|--:|--:|--:|--:|--:|
 | 10分 | 2 | 2 | 0 | 0 | 100.0% | 1843 | 66.5 |
-| 5分 | 45 | 22 | 23 | 0 | 48.9% | 1733 | 79.4 |
+| 5分 | 50 | 23 | 27 | 0 | 46.0% | 1719 | 79.9 |
 | 2分 | 0 | 0 | 0 | 0 | - | - | - |
 
 勝率は引き分けを除いた `勝 / (勝 + 負)`。
@@ -20,11 +20,16 @@
 
 | 日時 | 持ち時間 | 手番 | 相手 | 結果 | 手数 | 終局理由 | 自レート | 棋譜 | 悪手検出 |
 |---|---|---|---|:-:|--:|---|--:|---|---|
+| 2026-11-06 00:57 | 5分 | ☗先 | 相手(1602) | ● 負 | 88 | 時間切れ | 1719 | [CSA](data/csa/shogi5/giiimb75lt6g.csa) | - |
+| 2026-11-06 00:50 | 5分 | ☗先 | 相手(1605) | ● 負 | 52 | 投了 | 1727 | [CSA](data/csa/shogi5/sdqp1wly06ru.csa) | - |
+| 2026-11-05 18:44 | 5分 | ☗先 | 相手(1875) | ● 負 | 98 | 時間切れ | 1730 | [CSA](data/csa/shogi5/a1atsme3jlrv.csa) | - |
+| 2026-11-05 02:43 | 5分 | ☖後 | 相手(1704) | ○ 勝 | 94 | 投了 | 1725 | [CSA](data/csa/shogi5/cv45mi435man.csa) | - |
 | 2026-11-05 01:28 | 5分 | ☖後 | 相手(1608) | ● 負 | 115 | 時間切れ | 1733 | [CSA](data/csa/shogi5/vq6dz9aden01.csa) | [水匠5](data/analysis/reports/vq6dz9aden01.md) 逃0 大5 悪4 疑4 |
 | 2026-11-05 00:57 | 5分 | ☖後 | 相手(1599) | ● 負 | 53 | 投了 | 1741 | [CSA](data/csa/shogi5/4vdv08093jtj.csa) | [水匠5](data/analysis/reports/4vdv08093jtj.md) 逃0 大1 悪2 疑0 |
 | 2026-11-05 00:47 | 5分 | ☗先 | 相手(1846) | ○ 勝 | 119 | 投了 | 1734 | [CSA](data/csa/shogi5/dnk7otmi5vbw.csa) | [水匠5](data/analysis/reports/dnk7otmi5vbw.md) 逃0 大8 悪2 疑2 |
 | 2026-11-05 00:22 | 5分 | ☖後 | 相手(1652) | ○ 勝 | 66 | 投了 | 1729 | [CSA](data/csa/shogi5/ibyp1c1n4fsv.csa) | [水匠5](data/analysis/reports/ibyp1c1n4fsv.md) 逃0 大2 悪2 疑2 |
 | 2026-11-04 23:19 | 5分 | ☗先 | 相手(1662) | ○ 勝 | 115 | 詰み | 1724 | [CSA](data/csa/shogi5/00hm06fbajl1.csa) | [水匠5](data/analysis/reports/00hm06fbajl1.md) 逃0 大0 悪1 疑4 |
+| 2026-11-04 07:48 | 5分 | ☖後 | 相手(1800) | ● 負 | 91 | 時間切れ | 1729 | [CSA](data/csa/shogi5/ng7uaordy1sh.csa) | - |
 | 2026-11-03 06:30 | 5分 | ☗先 | 相手(1663) | ○ 勝 | 61 | 投了 | 1724 | [CSA](data/csa/shogi5/vlmg7sowkwdc.csa) | [水匠5](data/analysis/reports/vlmg7sowkwdc.md) 逃0 大1 悪1 疑0 |
 | 2026-11-03 03:13 | 5分 | ☗先 | 相手(1763) | ○ 勝 | 91 | 時間切れ | 1717 | [CSA](data/csa/shogi5/63aputghegju.csa) | [水匠5](data/analysis/reports/63aputghegju.md) 逃1 大5 悪2 疑1 |
 | 2026-11-03 03:02 | 5分 | ☗先 | 相手(1580) | ○ 勝 | 3 | 投了 | 1714 | [CSA](data/csa/shogi5/ph4tcdbgsa22.csa) | [水匠5](data/analysis/reports/ph4tcdbgsa22.md) 逃0 大0 悪0 疑0 |
@@ -35,11 +40,6 @@
 | 2026-11-01 07:50 | 5分 | ☗先 | 相手(1875) | ● 負 | 86 | 詰み | 1722 | [CSA](data/csa/shogi5/vzfpybyoukky.csa) | [水匠5](data/analysis/reports/vzfpybyoukky.md) 逃0 大1 悪5 疑1 |
 | 2026-11-01 07:43 | 5分 | ☖後 | 相手(1775) | ● 負 | 95 | 投了 | 1727 | [CSA](data/csa/shogi5/vfwzjqhcsp8a.csa) | [水匠5](data/analysis/reports/vfwzjqhcsp8a.md) 逃0 大2 悪2 疑3 |
 | 2026-11-01 02:19 | 5分 | ☗先 | 相手(1700) | ○ 勝 | 57 | 投了 | 1722 | [CSA](data/csa/shogi5/huc6okuziluw.csa) | [水匠5](data/analysis/reports/huc6okuziluw.md) 逃1 大3 悪2 疑0 |
-| 2026-10-31 17:39 | 5分 | ☖後 | 相手(1507) | ○ 勝 | 78 | 時間切れ | 1719 | [CSA](data/csa/shogi5/lcfsldgp37mt.csa) | [水匠5](data/analysis/reports/lcfsldgp37mt.md) 逃0 大1 悪5 疑3 |
-| 2026-10-31 17:30 | 5分 | ☗先 | 相手(1651) | ○ 勝 | 55 | 投了 | 1714 | [CSA](data/csa/shogi5/mdbd5x48ko53.csa) | [水匠5](data/analysis/reports/mdbd5x48ko53.md) 逃0 大1 悪1 疑2 |
-| 2026-10-31 09:51 | 5分 | ☖後 | 相手(1655) | ● 負 | 111 | 時間切れ | 1721 | [CSA](data/csa/shogi5/dsg657x1msx9.csa) | [水匠5](data/analysis/reports/dsg657x1msx9.md) 逃1 大2 悪5 疑2 |
-| 2026-10-31 09:41 | 5分 | ☗先 | 相手(1768) | ● 負 | 88 | 投了 | 1727 | [CSA](data/csa/shogi5/j28zuxvxl045.csa) | [水匠5](data/analysis/reports/j28zuxvxl045.md) 逃0 大3 悪2 疑1 |
-| 2026-10-31 09:33 | 5分 | ☖後 | 相手(1907) | ○ 勝 | 64 | 投了 | 1718 | [CSA](data/csa/shogi5/6b1mcz1l326i.csa) | [水匠5](data/analysis/reports/6b1mcz1l326i.md) 逃0 大3 悪2 疑2 |
 
 悪手検出の列: 評価関数名（レポートへのリンク）と、逃=詰み逃し・大=大悪手・悪=悪手・疑=疑問手 の件数。
 
