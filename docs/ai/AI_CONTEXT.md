@@ -3,8 +3,8 @@
 このファイルは生成 AI に対局傾向の分析を相談する際のインプット用です。リポジトリ構造・データ定義・現在の統計・実データのサンプルをまとめています。
 
 - 対象プレイヤー: `qwalks`
-- データ更新日時: 2026-11-09T01:27:59+09:00
-- 総対局数: 74（うち悪手検出済み 47）
+- データ更新日時: 2026-11-10T05:16:51+09:00
+- 総対局数: 78（うち悪手検出済み 47）
 
 ## 1. ファイル配置
 
@@ -64,22 +64,22 @@
 | time_mode | 局数 | 勝 | 負 | 分 | 勝率 | 平均手数 | 自レート範囲 | 最新レート | 期間 |
 |---|--:|--:|--:|--:|--:|--:|---|--:|---|
 | shogi10 | 2 | 2 | 0 | 0 | 100.0% | 66.5 | 1836〜1843 | 1843 | 2026-09-12 〜 2026-09-12 |
-| shogi5 | 72 | 33 | 39 | 0 | 45.8% | 80.5 | 1663〜1766 | 1673 | 2026-10-27 〜 2026-11-08 |
+| shogi5 | 76 | 33 | 43 | 0 | 43.4% | 81.5 | 1659〜1766 | 1659 | 2026-10-27 〜 2026-11-10 |
 
 ### ② time_mode × end_reason 別の勝敗件数
 
 | time_mode | end_reason | 勝 | 負 | 分 | 計 |
 |---|---|--:|--:|--:|--:|
 | shogi10 | 投了 | 2 | 0 | 0 | 2 |
-| shogi5 | 投了 | 20 | 16 | 0 | 36 |
-| shogi5 | 時間切れ | 2 | 16 | 0 | 18 |
+| shogi5 | 投了 | 20 | 17 | 0 | 37 |
+| shogi5 | 時間切れ | 2 | 19 | 0 | 21 |
 | shogi5 | 詰み | 10 | 7 | 0 | 17 |
 | shogi5 | 切断 | 1 | 0 | 0 | 1 |
 
 ### ③ ユニーク値一覧
 
-- `handicap`: `平手` (74)
-- `end_reason`: `投了` (38), `時間切れ` (18), `詰み` (17), `切断` (1)
+- `handicap`: `平手` (78)
+- `end_reason`: `投了` (39), `時間切れ` (21), `詰み` (17), `切断` (1)
 
 ## 4. 最新3件のデータサンプル
 
@@ -87,27 +87,27 @@
 
 ```csv
 game_id,time_mode,played_at,handicap,sente_name,sente_rating,gote_name,gote_rating,my_turn,my_rating,opponent_name,opponent_rating,result,moves_count,end_reason,csa_rel_path,csa_hash,fetched_at
-nzorq52z66sq,shogi5,2026-11-08 15:15:35,平手,qwalks,1673,相手,1824,SENTE,1673,相手,1824,WIN,3,切断,data/csa/shogi5/nzorq52z66sq.csa,052f66c56bb48a10782213f22e3cc998667f4e673c088d99841be8bdfae5416b,2026-11-09T01:27:59+09:00
-qxiged1ahfsn,shogi5,2026-11-08 15:08:47,平手,相手,1745,qwalks,1666,GOTE,1666,相手,1745,WIN,110,詰み,data/csa/shogi5/qxiged1ahfsn.csa,c0f754687f174e3749c52b1825d4343b9092534ee01115bbf4065503c4b201f0,2026-11-09T01:27:57+09:00
-494ierslpp4b,shogi5,2026-11-08 14:24:40,平手,qwalks,1663,相手,1436,SENTE,1663,相手,1436,WIN,103,詰み,data/csa/shogi5/494ierslpp4b.csa,6d18a8ce94277c8991ada58cbcf8236d8f59e481221bd68a15716befe5da4c9d,2026-11-09T01:27:55+09:00
+sqjxvea27n7t,shogi5,2026-11-10 02:01:14,平手,相手,1949,qwalks,1659,GOTE,1659,相手,1949,LOSS,101,時間切れ,data/csa/shogi5/sqjxvea27n7t.csa,a86c84f0142ca0b71bec485311d740f005290a6bfbf952311cdada12b9076b5a,2026-11-10T05:16:51+09:00
+zmnamldfi3g8,shogi5,2026-11-10 00:07:32,平手,相手,1430,qwalks,1669,GOTE,1669,相手,1430,LOSS,119,時間切れ,data/csa/shogi5/zmnamldfi3g8.csa,514feb09599b971e956ffff7cc52e192f66defbea499faeef4bfb37e489844e7,2026-11-10T05:16:49+09:00
+0dqu4du7tlqd,shogi5,2026-11-09 19:30:28,平手,qwalks,1675,相手,1669,SENTE,1675,相手,1669,LOSS,98,時間切れ,data/csa/shogi5/0dqu4du7tlqd.csa,0ef722834b9258ac2bcfe33b641961d3ce88970ce6006bec7bbf9ff10997039b,2026-11-10T05:16:47+09:00
 ```
 
 ### 表
 
 | game_id | time_mode | played_at | handicap | sente_name | sente_rating | gote_name | gote_rating | my_turn | my_rating | opponent_name | opponent_rating | result | moves_count | end_reason | csa_rel_path | csa_hash | fetched_at |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| nzorq52z66sq | shogi5 | 2026-11-08 15:15:35 | 平手 | qwalks | 1673 | 相手 | 1824 | SENTE | 1673 | 相手 | 1824 | WIN | 3 | 切断 | data/csa/shogi5/nzorq52z66sq.csa | 052f66c56bb48a10782213f22e3cc998667f4e673c088d99841be8bdfae5416b | 2026-11-09T01:27:59+09:00 |
-| qxiged1ahfsn | shogi5 | 2026-11-08 15:08:47 | 平手 | 相手 | 1745 | qwalks | 1666 | GOTE | 1666 | 相手 | 1745 | WIN | 110 | 詰み | data/csa/shogi5/qxiged1ahfsn.csa | c0f754687f174e3749c52b1825d4343b9092534ee01115bbf4065503c4b201f0 | 2026-11-09T01:27:57+09:00 |
-| 494ierslpp4b | shogi5 | 2026-11-08 14:24:40 | 平手 | qwalks | 1663 | 相手 | 1436 | SENTE | 1663 | 相手 | 1436 | WIN | 103 | 詰み | data/csa/shogi5/494ierslpp4b.csa | 6d18a8ce94277c8991ada58cbcf8236d8f59e481221bd68a15716befe5da4c9d | 2026-11-09T01:27:55+09:00 |
+| sqjxvea27n7t | shogi5 | 2026-11-10 02:01:14 | 平手 | 相手 | 1949 | qwalks | 1659 | GOTE | 1659 | 相手 | 1949 | LOSS | 101 | 時間切れ | data/csa/shogi5/sqjxvea27n7t.csa | a86c84f0142ca0b71bec485311d740f005290a6bfbf952311cdada12b9076b5a | 2026-11-10T05:16:51+09:00 |
+| zmnamldfi3g8 | shogi5 | 2026-11-10 00:07:32 | 平手 | 相手 | 1430 | qwalks | 1669 | GOTE | 1669 | 相手 | 1430 | LOSS | 119 | 時間切れ | data/csa/shogi5/zmnamldfi3g8.csa | 514feb09599b971e956ffff7cc52e192f66defbea499faeef4bfb37e489844e7 | 2026-11-10T05:16:49+09:00 |
+| 0dqu4du7tlqd | shogi5 | 2026-11-09 19:30:28 | 平手 | qwalks | 1675 | 相手 | 1669 | SENTE | 1675 | 相手 | 1669 | LOSS | 98 | 時間切れ | data/csa/shogi5/0dqu4du7tlqd.csa | 0ef722834b9258ac2bcfe33b641961d3ce88970ce6006bec7bbf9ff10997039b | 2026-11-10T05:16:47+09:00 |
 
 ## 5. 最新 CSA 棋譜（1局分・全文）
 
-`data/csa/shogi5/nzorq52z66sq.csa`（2026-11-08 15:15:35 / shogi5 / 自分=SENTE / WIN）
+`data/csa/shogi5/sqjxvea27n7t.csa`（2026-11-10 02:01:14 / shogi5 / 自分=GOTE / LOSS）
 
 ```csa
 'Shogi Quest
-N+qwalks(1673)
-N-相手(1824)
+N+相手(1949)
+N-qwalks(1659)
 P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
 P2 * -HI *  *  *  *  * -KA * 
 P3-FU-FU-FU-FU-FU-FU-FU-FU-FU
@@ -119,8 +119,106 @@ P8 * +KA *  *  *  *  * +HI *
 P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
 +
 +7776FU
+-3334FU
++6766FU
 -8384FU
++2868HI
+-8485FU
++8877KA
+-7162GI
++5948OU
+-5354FU
++4838OU
+-5142OU
++3828OU
+-1314FU
++1716FU
+-4232OU
++7978GI
+-6152KI
++7867GI
+-2324FU
++3938GI
+-3223OU
 +2726FU
+-3132GI
++3827GI
+-6253GI
++4938KI
+-5344GI
++3736FU
+-2231KA
++6888HI
+-7374FU
++2937KE
+-9394FU
++9796FU
+-2133KE
++6958KI
+-3164KA
++6665FU
+-6473KA
++6756GI
+-3435FU
++3635FU
+-4435GI
++0036FU
+-3544GI
++5848KI
+-2312OU
++9998KY
+-3223GI
++7766KA
+-4132KI
++7675FU
+-7475FU
++6675KA
+-0074FU
++7566KA
+-2425FU
++2625FU
+-3325KE
++4746FU
+-2537NK
++4837KI
+-0025FU
++3747KI
+-8586FU
++8786FU
+-4455GI
++5655GI
+-7355KA
++6655KA
+-5455FU
++0041GI
+-5242KI
++4132NG
+-4232KI
++0035KA
+-0087FU
++8887HI
+-0026KE
++3848KI
+-0044GI
++0024FU
+-4435GI
++2423TO
+-3223KI
++3635FU
+-0038FU
++0036KE
+-0039GI
++2829OU
+-0069KA
++0037GI
+-3948NG
++4748KI
+-0039KA
++0028GI
+-3948UM
++3748GI
+-6987UM
++0024FU
 ```
 
 ## 6. 悪手検出データ（analyze_mistakes.py: 将棋AIによる悪手・疑問手の抽出）
