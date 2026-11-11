@@ -14,6 +14,7 @@
 | ファイル | 内容 |
 |---|---|
 | `data/analysis/study/opening_study_report.md` | 勉強用レポート。サマリー・早見表・局面別の詳細カード・別枠（単発の大悪手） |
+| `data/analysis/study/img/*.svg` | 詳細カードの盤面画像（赤＝一番多く間違えた手、青＝AI 推奨1位） |
 | `data/analysis/study/opening_positions.csv` | 局面ごとの集計（1 行 = 1 局面）。フラッシュカードや Web UI 用 |
 
 ## 集計の方法

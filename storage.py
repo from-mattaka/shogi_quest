@@ -186,6 +186,39 @@ class Storage:
         return f"[{_md(a['model_name'])}]({link_prefix}{an.report_rel(game_id)}) {counts}"
 
     # ---------------------------------------------------------- README.md
+    @staticmethod
+    def _local_analysis_steps() -> list[str]:
+        """README 末尾に載せる、ローカルで定期的に実行する分析の手順（固定文）。"""
+        return [
+            "",
+            "## ローカルでの分析手順（定期的に手動で実行）",
+            "",
+            "対局の収集は Actions が自動で行います。分析は次の順にローカルで実行します"
+            "（初回セットアップは [`docs/mistake_analysis.md`](docs/mistake_analysis.md) の「初回セットアップ」）。",
+            "2・3 は 1 の結果（`data/analysis/`）を読むだけなので、必ず 1 の後に実行します。",
+            "",
+            "```bash",
+            "git pull                                         # 0. Actions が収集した対局を取り込む",
+            ".venv/bin/python analyze_mistakes.py             # 1. 局面の解析（悪手検出。未解析の対局だけ。1局30〜60秒）",
+            ".venv/bin/python make_quiz.py                    # 2. 悪手の問題集（quiz/index.html）を作り直す",
+            ".venv/bin/python analyze_opening_study.py        # 3. 序盤の同一局面での悪手の分析（data/analysis/study/）",
+            "git add data/analysis quiz README.md docs/ai/AI_CONTEXT.md",
+            "git commit -m \"analysis: ...\" && git push",
+            "```",
+            "",
+            "| 手順 | 内容 | 説明 |",
+            "|---|---|---|",
+            "| 1. `analyze_mistakes.py` | 将棋AIで対局を解析し、レポート・`mistakes.csv`・README を更新 "
+            "| [`docs/mistake_analysis.md`](docs/mistake_analysis.md) |",
+            "| 2. `make_quiz.py` | `mistakes.csv` から次の一手問題集を作る（エンジン不要・数秒） "
+            "| [`docs/mistake_analysis.md`](docs/mistake_analysis.md) の「次の一手問題集」 |",
+            "| 3. `analyze_opening_study.py` | 序盤に繰り返し出た同じ局面での悪手をまとめる（エンジン不要・数秒） "
+            "| [`docs/opening_study.md`](docs/opening_study.md) |",
+            "",
+            "- 解析対象の確認だけなら `analyze_mistakes.py --dry-run`。途中で Ctrl+C しても、次回は続きから再開します",
+            "- push で README が競合したら `analyze_mistakes.py --regen-only` で作り直します",
+        ]
+
     def write_readme(self, player: str, recent_n: int = 20, quiz_url: str | None = None) -> None:
         by_mode = self._by_mode()
         quiz = f"\n\n**[次の一手 問題集]({quiz_url})** — 悪手検出で見つかった局面をブラウザで解けます（GitHub Pages）" if quiz_url else ""
@@ -248,6 +281,7 @@ class Storage:
                 )
             L += ["", "悪手率 = (大悪手 + 悪手) / 自分の手数。一覧: "
                   f"[`{an.MISTAKES_REL}`]({an.MISTAKES_REL})"]
+        L += self._local_analysis_steps()
         (self.root / "README.md").write_text("\n".join(L) + "\n", encoding="utf-8")
 
     # ---------------------------------------------------------- AI_CONTEXT.md
@@ -277,7 +311,9 @@ class Storage:
             "│       ├── analysis_index.csv   # 解析済み対局の台帳（使用エンジン・評価関数・件数）",
             "│       ├── mistakes.csv         # 悪手・疑問手の一覧（全対局分）",
             "│       ├── moves/{game_id}.csv  # 1手ごとの評価値・期待勝率の推移",
-            "│       └── reports/{game_id}.md # 対局別の解析レポート（盤面図・候補手つき）",
+            "│       ├── reports/{game_id}.md # 対局別の解析レポート（盤面図・候補手つき）",
+            "│       ├── reports/img/{game_id}_{ply}.svg # レポートの盤面画像（テキストの盤面図・SFEN はレポート本文にもある）",
+            "│       └── study/               # 序盤研究ドリル（analyze_opening_study.py の出力。盤面画像は study/img/）",
             "├── docs/",
             "│   ├── mistake_analysis.md      # 悪手検出（analyze_mistakes.py）の説明",
             "│   ├── engine_model.md          # 評価関数の確認・切り替え手順",

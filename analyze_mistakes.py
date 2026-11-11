@@ -11,6 +11,7 @@
     .venv/bin/python analyze_mistakes.py --show-engine         # 使用するエンジン・モデルと照合結果
     .venv/bin/python analyze_mistakes.py --models              # モデル別の解析局数
     .venv/bin/python analyze_mistakes.py --regen-only          # README / AI_CONTEXT だけ作り直す
+    .venv/bin/python analyze_mistakes.py --redraw-boards       # 解析済みレポートの盤面画像を作り直す（エンジン不要）
 """
 from __future__ import annotations
 
@@ -18,6 +19,7 @@ import argparse
 import json
 import logging
 import os
+import re
 import subprocess
 import sys
 from collections import Counter
@@ -90,9 +92,53 @@ def select_targets(store: Storage, index: dict, a: argparse.Namespace, cfg: dict
     return out[: a.limit] if a.limit else out
 
 
+# ------------------------------------------------------------------ 盤面画像の作り直し
+_OLD_BOARD = re.compile(r'<a id="ply-(\d+)"></a>((?:(?!<a id=).)*?着手前の局面:\n\n)```text\n(.*?)\n```\n', re.S)
+
+
+def redraw_boards() -> int:
+    """mistakes.csv と moves CSV から盤面画像（SVG）を作り直し、テキストだけの古いレポートは画像つきに書き換える。"""
+    from analysis import board_svg, report
+
+    by_game: dict[str, dict[int, dict]] = {}
+    for r in schema.read_csv(ROOT / schema.MISTAKES_REL):
+        by_game.setdefault(r["game_id"], {})[int(r["ply"])] = r
+    rdir = ROOT / schema.REPORTS_DIR_REL
+    n_img = n_md = 0
+    for md in sorted(rdir.glob("*.md")):
+        gid = md.stem
+        rows = by_game.get(gid, {})
+        mpath = ROOT / schema.MOVES_DIR_REL / f"{gid}.csv"
+        prev = {int(r["ply"]): r["move_usi"] for r in schema.read_csv(mpath)} if mpath.exists() else {}
+        images = {}
+        for ply, r in rows.items():
+            images[report.board_image_rel(gid, ply)] = board_svg.position_svg(
+                r["sfen_before"], ply, played=r["move_usi"], best=r["cand1_usi"] or None,
+                last=prev.get(ply - 1) or None, my_turn=r["my_turn"])
+
+        def sub(mo: re.Match) -> str:
+            ply = int(mo.group(1))
+            r = rows.get(ply)
+            if not r:
+                return mo.group(0)
+            block = board_svg.markdown_block(report.board_image_rel(gid, ply), f"{ply}手目の局面", mo.group(3),
+                                             r["move_ja"], r["cand1_move"] or None)
+            return f'<a id="ply-{ply}"></a>{mo.group(2)}' + "\n".join(block) + "\n"
+
+        text = md.read_text(encoding="utf-8")
+        new = _OLD_BOARD.sub(sub, text)
+        if new != text:
+            md.write_text(new, encoding="utf-8", newline="\n")
+            n_md += 1
+        board_svg.write_images(rdir, images, stale_glob=f"img/{gid}_*.svg")
+        n_img += len(images)
+    log.info("盤面画像 %d 枚を書き出し、レポート %d 件を画像つきに書き換えました", n_img, n_md)
+    return 0
+
+
 # ------------------------------------------------------------------ 保存
 def save_game(meta: dict, game, ga, p, info) -> dict:
-    from analysis import report
+    from analysis import board_svg, report
 
     analyzed_at = now_jst_iso()
     gid = meta["game_id"]
@@ -101,6 +147,7 @@ def save_game(meta: dict, game, ga, p, info) -> dict:
     rp = ROOT / schema.report_rel(gid)
     rp.parent.mkdir(parents=True, exist_ok=True)
     rp.write_text(report.markdown(meta, game, ga, p, info, analyzed_at), encoding="utf-8")
+    board_svg.write_images(rp.parent, report.board_images(gid, game, ga), stale_glob=f"img/{gid}_*.svg")
 
     mpath = ROOT / schema.MISTAKES_REL
     rows = [r for r in schema.read_csv(mpath) if r["game_id"] != gid] + report.mistake_rows(meta, ga, p, info)
@@ -187,6 +234,7 @@ def main() -> int:
     ap.add_argument("--reanalyze-model-mismatch", action="store_true", help="現在と違うモデルで解析した対局を再解析")
     ap.add_argument("--dry-run", action="store_true", help="対象の一覧を表示するだけ")
     ap.add_argument("--regen-only", action="store_true", help="README / AI_CONTEXT だけ作り直す")
+    ap.add_argument("--redraw-boards", action="store_true", help="解析済みレポートの盤面画像を作り直す（エンジン不要）")
     ap.add_argument("--show-engine", action="store_true", help="使用するエンジン・モデルの照合結果を表示")
     ap.add_argument("--models", action="store_true", help="モデル別の解析局数を表示")
     ap.add_argument("--threads", type=int, help="エンジンのスレッド数（設定ファイルを上書き）")
@@ -208,6 +256,8 @@ def main() -> int:
         return 0
     if a.models:
         return cmd_models(index)
+    if a.redraw_boards:
+        return redraw_boards()
 
     p = build_params(cfg, a)
     if a.show_engine:

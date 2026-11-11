@@ -155,6 +155,12 @@ xychart-beta
 
 着手前の局面:
 
+![27手目の局面](img/08hldm71rauz_027.svg)
+
+🔴 実戦 ▲６六歩(67)　🔵 AI推奨 ▲３七銀(48)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：なし
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -172,6 +178,8 @@ xychart-beta
 先手の持駒：なし
 手数＝26　△５四銀右　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -192,6 +200,12 @@ SFEN: `ln1gk2nl/1r4g2/4psbpp/ppppspp2/7P1/P1P1P1P2/1P1P1P2P/1SKBGS1R1/LN1G3NL b 
 
 着手前の局面:
 
+![33手目の局面](img/08hldm71rauz_033.svg)
+
+🔴 実戦 ▲３五歩(36)　🔵 AI推奨 ▲２四歩(25)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：歩
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -209,6 +223,8 @@ SFEN: `ln1gk2nl/1r4g2/4psbpp/ppppspp2/7P1/P1P1P1P2/1P1P1P2P/1SKBGS1R1/LN1G3NL b 
 先手の持駒：歩
 手数＝32　△６五同銀　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -229,6 +245,12 @@ SFEN: `ln1gk2nl/1r4g2/4psbpp/ppp3p2/3s1p1P1/P1P1P1P2/1PS2P2P/2KBGS1R1/LN1G3NL b 
 
 着手前の局面:
 
+![35手目の局面](img/08hldm71rauz_035.svg)
+
+🔴 実戦 ▲３四歩(35)　🔵 AI推奨 ▲２四歩(25)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：なし
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -246,6 +268,8 @@ SFEN: `ln1gk2nl/1r4g2/4psbpp/ppp3p2/3s1p1P1/P1P1P1P2/1PS2P2P/2KBGS1R1/LN1G3NL b 
 先手の持駒：歩
 手数＝34　△６六歩　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -266,6 +290,12 @@ SFEN: `ln1gk2nl/1r4g2/4psbpp/ppp3p2/3s1pPP1/P1PpP4/1PS2P2P/2KBGS1R1/LN1G3NL b P 
 
 着手前の局面:
 
+![37手目の局面](img/08hldm71rauz_037.svg)
+
+🔴 実戦 ▲２四歩(25)　🔵 AI推奨 ▲３五歩打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：歩
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -283,6 +313,8 @@ SFEN: `ln1gk2nl/1r4g2/4psbpp/ppp3p2/3s1pPP1/P1PpP4/1PS2P2P/2KBGS1R1/LN1G3NL b P 
 先手の持駒：歩二
 手数＝36　△３四同銀　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -303,6 +335,12 @@ SFEN: `ln1gk2nl/1r4g2/4p1bpp/ppp3s2/3s1p1P1/P1PpP4/1PS2P2P/2KBGS1R1/LN1G3NL b 2P
 
 着手前の局面:
 
+![49手目の局面](img/08hldm71rauz_049.svg)
+
+🔴 実戦 ▲５五歩(56)　🔵 AI推奨 ▲１一角成(44)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：なし
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -320,6 +358,8 @@ SFEN: `ln1gk2nl/1r4g2/4p1bpp/ppp3s2/3s1p1P1/P1PpP4/1PS2P2P/2KBGS1R1/LN1G3NL b 2P
 先手の持駒：歩二
 手数＝48　△３六歩　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -340,6 +380,12 @@ SFEN: `ln1gk2nl/1r7/2b1p2gp/ppp2Bsp1/3s1p3/P1PpP1p2/1PS2PP1P/2K1GS1R1/LN1G3NL b 
 
 着手前の局面:
 
+![57手目の局面](img/08hldm71rauz_057.svg)
+
+🔴 実戦 ▲５五馬(54)　🔵 AI推奨 ▲２一馬(54)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：歩二
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -357,6 +403,8 @@ SFEN: `ln1gk2nl/1r7/2b1p2gp/ppp2Bsp1/3s1p3/P1PpP1p2/1PS2PP1P/2K1GS1R1/LN1G3NL b 
 先手の持駒：歩二
 手数＝56　△４四金　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -377,6 +425,12 @@ SFEN: `ln1gk2nl/1r7/8p/ppp1+Bgsp1/4bp3/P1Pps1p2/1PS2PP1P/2K1GS1R1/LN1G3NL b 2P2p
 
 着手前の局面:
 
+![59手目の局面](img/08hldm71rauz_059.svg)
+
+🔴 実戦 ▲６四角打　🔵 AI推奨 ▲６八歩打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角　歩二
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -394,6 +448,8 @@ SFEN: `ln1gk2nl/1r7/8p/ppp1+Bgsp1/4bp3/P1Pps1p2/1PS2PP1P/2K1GS1R1/LN1G3NL b 2P2p
 先手の持駒：角　歩二
 手数＝58　△５五同金　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -414,6 +470,12 @@ SFEN: `ln1gk2nl/1r7/8p/ppp3sp1/4gp3/P1Pps1p2/1PS2PP1P/2K1GS1R1/LN1G3NL b B2Pb2p 
 
 着手前の局面:
 
+![65手目の局面](img/08hldm71rauz_065.svg)
+
+🔴 実戦 ▲６五歩打　🔵 AI推奨 ▲４二銀打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角　金　歩二
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -431,6 +493,8 @@ SFEN: `ln1gk2nl/1r7/8p/ppp3sp1/4gp3/P1Pps1p2/1PS2PP1P/2K1GS1R1/LN1G3NL b B2Pb2p 
 先手の持駒：銀　歩三
 手数＝64　△６二飛　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -451,6 +515,12 @@ SFEN: `ln1gk2nl/3r5/8p/pppB2sp1/4gp3/P1P3p2/1PSK1PP1P/5S1R1/LN1G3NL b S3Pbg2p 65
 
 着手前の局面:
 
+![69手目の局面](img/08hldm71rauz_069.svg)
+
+🔴 実戦 ▲５八玉(67)　🔵 AI推奨 ▲６八玉(67)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角　金　歩二
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -468,6 +538,8 @@ SFEN: `ln1gk2nl/3r5/8p/pppB2sp1/4gp3/P1P3p2/1PSK1PP1P/5S1R1/LN1G3NL b S3Pbg2p 65
 先手の持駒：飛　銀　歩二
 手数＝68　△５六角　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|

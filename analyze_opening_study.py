@@ -29,7 +29,7 @@ from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from analysis import schema
+from analysis import board_svg, schema
 from analysis.kifu import load_game
 
 ROOT = Path(__file__).resolve().parent
@@ -73,6 +73,7 @@ class Encounter:
     side: str
     sfen: str
     bod: str
+    prev_usi: str           # 直前の相手の指し手（盤面図で強調する）
     move_usi: str
     move_ja: str
     best_usi: str           # 第1パスの最善手
@@ -295,6 +296,7 @@ def collect_encounters(a: argparse.Namespace) -> tuple[list[Encounter], dict]:
             encs.append(Encounter(
                 game_id=gid, played_at=g["played_at"], time_mode=g["time_mode"], result=g.get("result", ""),
                 ply=ply, side=game.turns[k], sfen=game.sfens[k], bod=game.bods[k],
+                prev_usi=game.moves[k - 1] if k > 0 else "",
                 move_usi=r["move_usi"], move_ja=r["move_ja"], best_usi=r.get("best_usi", ""),
                 judge=judge,
                 drop=_f(mrow["winrate_drop"]) if mrow else _f(r.get("winrate_drop")),
@@ -441,7 +443,21 @@ def _anchor(prefix: str, rank: int) -> str:
     return f'<a id="{prefix}-{rank}"></a>'
 
 
-def card(rank: int, p: Position, prefix: str) -> list[str]:
+def board_block(rank: int, p: Position, prefix: str, images: dict[str, str]) -> list[str]:
+    """代表局面の盤面画像（赤＝一番多く間違えた手、青＝AI 推奨1位）と折りたたんだ BOD。"""
+    rep = p.rep
+    worst = p.worst_move
+    cands = _cands(p.cand_row)
+    best_usi = cands[0][1] if cands else (rep.best_usi or None)
+    best_ja = cands[0][0] if cands else None
+    rel = f"img/{prefix}_{rank:02d}.svg"
+    images[rel] = board_svg.position_svg(rep.sfen, rep.ply, played=worst.usi if worst else None, best=best_usi,
+                                         last=rep.prev_usi or None, my_turn=rep.side)
+    return board_svg.markdown_block(rel, f"#{rank} の局面", rep.bod, worst.ja if worst else None, best_ja)
+
+
+def card(rank: int, p: Position, prefix: str, images: dict[str, str]) -> list[str]:
+    """詳細カード。盤面画像は images {出力先からの相対パス: SVG} に追加する。"""
     rep = p.rep
     cands = _cands(p.cand_row)
     cand_rank = {usi: i for i, (_ja, usi, _ev, _pv) in enumerate(cands, 1)}
@@ -453,9 +469,7 @@ def card(rank: int, p: Position, prefix: str) -> list[str]:
         f"（{p.m}/{p.n}）、平均勝率低下（間違えた回）{_pt(p.avg_mistake_drop)}",
         f"- 出現: {ply_note}、着手前の期待勝率 平均 {_pct(p.avg_wr_before)}",
         "",
-        "```text",
-        rep.bod,
-        "```",
+        *board_block(rank, p, prefix, images),
         "",
         f"SFEN: `{rep.sfen}`",
         "",
@@ -502,7 +516,8 @@ def summary_table(positions: list[Position], prefix: str, limit: int | None) -> 
 
 
 def markdown(main: list[Position], single: list[Position], encs: list[Encounter], meta: dict,
-             why: Counter, a: argparse.Namespace) -> str:
+             why: Counter, a: argparse.Namespace, images: dict[str, str]) -> str:
+    """レポート本文を返す。盤面画像は images に追加する（呼び出し側で書き出す）。"""
     n_games = len({e.game_id for e in encs})
     n_pos = len({normalize_sfen(e.sfen) for e in encs})
     n_repeat = sum(1 for c in Counter(normalize_sfen(e.sfen) for e in encs).values() if c >= a.min_encounters)
@@ -548,7 +563,7 @@ def markdown(main: list[Position], single: list[Position], encs: list[Encounter]
         L.append("条件に合う局面はありませんでした。対局が増えるか、`--min-encounters` / `--max-ply` を変えると見つかることがあります。")
     L += ["", "## 局面別の詳細カード", ""]
     for rank, p in enumerate(main, 1):
-        L += card(rank, p, "pos")
+        L += card(rank, p, "pos", images)
 
     L += [f"## 別枠: {PATTERN_SINGLE}（1回だけ出てきた局面）", ""]
     if single:
@@ -557,7 +572,7 @@ def markdown(main: list[Position], single: list[Position], encs: list[Encounter]
             L += summary_table(single, "single", None)
             L.append("")
             for rank, p in enumerate(single, 1):
-                L += card(rank, p, "single")
+                L += card(rank, p, "single", images)
         else:
             L += ["対局 ID のリンクから対局別レポートの該当手番に飛べます。詳細カードは `--single-blunder-cards` で出力します。", ""]
             L += ["| 順位 | 対局 | 手数 | 指し手 | 判定 | 勝率低下 | AI 最善手 |", "|--:|---|--:|---|---|--:|---|"]
@@ -614,7 +629,9 @@ def main() -> int:
     out = Path(a.out_dir)
     out.mkdir(parents=True, exist_ok=True)
     schema.write_csv(out / CSV_NAME, CSV_COLUMNS, csv_rows(main_pos, meta["model"]) + csv_rows(single_pos, meta["model"]))
-    (out / REPORT_NAME).write_text(markdown(main_pos, single_pos, encs, meta, why, a), encoding="utf-8")
+    images: dict[str, str] = {}
+    (out / REPORT_NAME).write_text(markdown(main_pos, single_pos, encs, meta, why, a, images), encoding="utf-8")
+    board_svg.write_images(out, images, stale_glob="img/*.svg")
 
     pc = Counter(p.pattern for p in main_pos)
     print(f"対象 {meta['stats']['対象']} 局 / 1〜{a.max_ply}手目の自分の手 {len(encs)} 手")

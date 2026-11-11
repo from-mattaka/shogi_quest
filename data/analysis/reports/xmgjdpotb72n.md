@@ -132,6 +132,12 @@ xychart-beta
 
 着手前の局面:
 
+![6手目の局面](img/xmgjdpotb72n_006.svg)
+
+🔴 実戦 △８五歩(84)　🔵 AI推奨 △７七角成(22)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：なし
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -150,6 +156,8 @@ xychart-beta
 後手番
 手数＝5　▲７八金　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -170,6 +178,12 @@ SFEN: `lnsgkgsnl/1r5b1/p1pppp1pp/1p4p2/9/2P6/PPBPPPPPP/2G4R1/LNS1KGSNL w - 6`
 
 着手前の局面:
 
+![22手目の局面](img/xmgjdpotb72n_022.svg)
+
+🔴 実戦 △７三銀(62)　🔵 AI推奨 △１五歩(14)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -188,6 +202,8 @@ SFEN: `lnsgkgsnl/1r5b1/p1pppp1pp/1p4p2/9/2P6/PPBPPPPPP/2G4R1/LNS1KGSNL w - 6`
 後手番
 手数＝21　▲７七桂　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -208,6 +224,12 @@ SFEN: `ln3g1nl/1r1sg1ks1/p2ppp1p1/2p3p1p/1p7/2PP5/PPN1PPPPP/2GR2SK1/L1S2G1NL w B
 
 着手前の局面:
 
+![42手目の局面](img/xmgjdpotb72n_042.svg)
+
+🔴 実戦 △３六歩(35)　🔵 AI推奨 △８四飛(82)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角　歩
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -226,6 +248,8 @@ SFEN: `ln3g1nl/1r1sg1ks1/p2ppp1p1/2p3p1p/1p7/2PP5/PPN1PPPPP/2GR2SK1/L1S2G1NL w B
 後手番
 手数＝41　▲４六角　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -246,6 +270,12 @@ SFEN: `ln3g1nl/1r2g1k2/2spppsp1/p1p6/3P1Pp1p/2P1SB3/PPN1P1PPP/2G3SK1/L2R1G1NL w 
 
 着手前の局面:
 
+![50手目の局面](img/xmgjdpotb72n_050.svg)
+
+🔴 実戦 △７四飛(84)　🔵 AI推奨 △３五歩打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角　歩二
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -264,6 +294,8 @@ SFEN: `ln3g1nl/1r2g1k2/2spppsp1/p1p6/3P1Pp1p/2P1SB3/PPN1P1PPP/2G3SK1/L2R1G1NL w 
 後手番
 手数＝49　▲７六同銀　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -284,6 +316,12 @@ SFEN: `ln3g1nl/4g1k2/2spppsp1/pr7/3P1P2p/2S2BP2/PPN1P1NPP/2G3SK1/L2R1G2L w 2Pb2p
 
 着手前の局面:
 
+![56手目の局面](img/xmgjdpotb72n_056.svg)
+
+🔴 実戦 △９五歩(94)　🔵 AI推奨 △１四角打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角　歩二
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -302,6 +340,8 @@ SFEN: `ln3g1nl/4g1k2/2spppsp1/pr7/3P1P2p/2S2BP2/PPN1P1NPP/2G3SK1/L2R1G2L w 2Pb2p
 後手番
 手数＝55　▲４七銀　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -322,6 +362,12 @@ SFEN: `ln3g1nl/4g1k2/2spppsp1/p6r1/2PP1PP1p/2S2B3/PPN1PSNPP/2G4K1/L2R1G2L w Pb2p
 
 着手前の局面:
 
+![58手目の局面](img/xmgjdpotb72n_058.svg)
+
+🔴 実戦 △９三桂(81)　🔵 AI推奨 △１四角打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角　歩二
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -340,6 +386,8 @@ SFEN: `ln3g1nl/4g1k2/2spppsp1/p6r1/2PP1PP1p/2S2B3/PPN1PSNPP/2G4K1/L2R1G2L w Pb2p
 後手番
 手数＝57　▲８五銀　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -360,6 +408,12 @@ SFEN: `ln3g1nl/4g1k2/2spppsp1/7r1/pSPP1PP1p/5B3/PPN1PSNPP/2G4K1/L2R1G2L w Pb2p 5
 
 着手前の局面:
 
+![60手目の局面](img/xmgjdpotb72n_060.svg)
+
+🔴 実戦 △９四角打　🔵 AI推奨 △１四角打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角　歩二
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -378,6 +432,8 @@ SFEN: `ln3g1nl/4g1k2/2spppsp1/7r1/pSPP1PP1p/5B3/PPN1PSNPP/2G4K1/L2R1G2L w Pb2p 5
 後手番
 手数＝59　▲７六銀　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -398,6 +454,12 @@ SFEN: `l4g1nl/4g1k2/n1spppsp1/7r1/p1PP1PP1p/2S2B3/PPN1PSNPP/2G4K1/L2R1G2L w Pb2p
 
 着手前の局面:
 
+![62手目の局面](img/xmgjdpotb72n_062.svg)
+
+🔴 実戦 △８四飛(24)　🔵 AI推奨 △６四歩(63)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：歩二
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -416,6 +478,8 @@ SFEN: `l4g1nl/4g1k2/n1spppsp1/7r1/p1PP1PP1p/2S2B3/PPN1PSNPP/2G4K1/L2R1G2L w Pb2p
 後手番
 手数＝61　▲６七金　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -436,6 +500,12 @@ SFEN: `l4g1nl/4g1k2/n1spppsp1/b6r1/p1PP1PP1p/2S2B3/PPNGPSNPP/7K1/L2R1G2L w P2p 6
 
 着手前の局面:
 
+![66手目の局面](img/xmgjdpotb72n_066.svg)
+
+🔴 実戦 △７八銀打　🔵 AI推奨 △７二歩打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：銀　歩二
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -454,6 +524,8 @@ SFEN: `l4g1nl/4g1k2/n1spppsp1/b6r1/p1PP1PP1p/2S2B3/PPNGPSNPP/7K1/L2R1G2L w P2p 6
 後手番
 手数＝65　▲７六同金　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|

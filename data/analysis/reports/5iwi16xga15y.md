@@ -126,6 +126,12 @@ xychart-beta
 
 着手前の局面:
 
+![17手目の局面](img/5iwi16xga15y_017.svg)
+
+🔴 実戦 ▲４六歩(47)　🔵 AI推奨 ▲２四歩(25)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -143,6 +149,8 @@ xychart-beta
 先手の持駒：角
 手数＝16　△４二玉　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -163,6 +171,12 @@ SFEN: `lnsg3nl/1r3kgs1/p1pppp1p1/6p1p/1p5P1/2P6/PPSPPPP1P/2G2S1R1/LN2KG1NL b Bb 
 
 着手前の局面:
 
+![53手目の局面](img/5iwi16xga15y_053.svg)
+
+🔴 実戦 ▲同飛(28)　🔵 AI推奨 ▲４六歩打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：銀　歩四
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -180,6 +194,8 @@ SFEN: `lnsg3nl/1r3kgs1/p1pppp1p1/6p1p/1p5P1/2P6/PPSPPPP1P/2G2S1R1/LN2KG1NL b Bb 
 先手の持駒：角　銀　歩二
 手数＝52　△２四同歩　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|

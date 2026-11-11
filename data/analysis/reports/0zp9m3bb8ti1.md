@@ -144,6 +144,12 @@ xychart-beta
 
 着手前の局面:
 
+![34手目の局面](img/0zp9m3bb8ti1_034.svg)
+
+🔴 実戦 △４四歩(43)　🔵 AI推奨 △７三桂(81)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：歩
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -162,6 +168,8 @@ xychart-beta
 後手番
 手数＝33　▲５八飛　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -182,6 +190,12 @@ SFEN: `ln3k1nl/1r1sgbg2/3p1pspp/p1p1p1p2/7P1/2PSPPP2/PP1P1SN1P/1BG1R4/LN1K1G2L w
 
 着手前の局面:
 
+![36手目の局面](img/0zp9m3bb8ti1_036.svg)
+
+🔴 実戦 △３一玉(41)　🔵 AI推奨 △７三桂(81)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：歩
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -200,6 +214,8 @@ SFEN: `ln3k1nl/1r1sgbg2/3p1pspp/p1p1p1p2/7P1/2PSPPP2/PP1P1SN1P/1BG1R4/LN1K1G2L w
 後手番
 手数＝35　▲４八金　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -220,6 +236,12 @@ SFEN: `ln3k1nl/1r1sgbg2/3p2spp/p1p1ppp2/7P1/2PSPPP2/PP1P1SN1P/1BG1RG3/LN1K4L w p
 
 着手前の局面:
 
+![40手目の局面](img/0zp9m3bb8ti1_040.svg)
+
+🔴 実戦 △７五歩(74)　🔵 AI推奨 △７三桂(81)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：歩二
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -238,6 +260,8 @@ SFEN: `ln3k1nl/1r1sgbg2/3p2spp/p1p1ppp2/7P1/2PSPPP2/PP1P1SN1P/1BG1RG3/LN1K4L w p
 後手番
 手数＝39　▲５五同銀　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -258,6 +282,12 @@ SFEN: `ln4knl/1r1sgbg2/3p2spp/p1p2pp2/4S2P1/2P2PP2/PP1P1SN1P/1BG1RG3/LN1K4L w P2
 
 着手前の局面:
 
+![44手目の局面](img/0zp9m3bb8ti1_044.svg)
+
+🔴 実戦 △７五角(42)　🔵 AI推奨 △７三桂(81)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：歩三
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -276,6 +306,8 @@ SFEN: `ln4knl/1r1sgbg2/3p2spp/p1p2pp2/4S2P1/2P2PP2/PP1P1SN1P/1BG1RG3/LN1K4L w P2
 後手番
 手数＝43　▲４四歩　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -296,6 +328,12 @@ SFEN: `ln4knl/1r1sgbg2/3p2spp/p4Pp2/4S2P1/2p3P2/PP1P1SN1P/1BG1RG3/LN1K4L w 2P3p 
 
 着手前の局面:
 
+![52手目の局面](img/0zp9m3bb8ti1_052.svg)
+
+🔴 実戦 △同銀(44)　🔵 AI推奨 △７七桂打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：桂　歩四
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -314,6 +352,8 @@ SFEN: `ln4knl/1r1sgbg2/3p2spp/p4Pp2/4S2P1/2p3P2/PP1P1SN1P/1BG1RG3/LN1K4L w 2P3p 
 後手番
 手数＝51　▲５五銀　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|

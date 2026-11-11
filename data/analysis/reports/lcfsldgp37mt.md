@@ -139,6 +139,12 @@ xychart-beta
 
 着手前の局面:
 
+![34手目の局面](img/lcfsldgp37mt_034.svg)
+
+🔴 実戦 △３一角(22)　🔵 AI推奨 △５五歩(54)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：なし
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -157,6 +163,8 @@ xychart-beta
 後手番
 手数＝33　▲５六銀　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -177,6 +185,12 @@ SFEN: `ln3g1nl/1r2g1sb1/3p1p1k1/p1p1psppp/1p7/2PPSPPPP/PPB1PGN2/3R2S2/LN3GK1L w 
 
 着手前の局面:
 
+![42手目の局面](img/lcfsldgp37mt_042.svg)
+
+🔴 実戦 △８六歩(85)　🔵 AI推奨 △７二飛(82)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：歩
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -195,6 +209,8 @@ SFEN: `ln3g1nl/1r2g1sb1/3p1p1k1/p1p1psppp/1p7/2PPSPPPP/PPB1PGN2/3R2S2/LN3GK1L w 
 後手番
 手数＝41　▲６五歩　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -215,6 +231,12 @@ SFEN: `ln3g1nl/1r2gbs2/3p1p1k1/p3psppp/1p1P5/P1P1SPPPP/1PB1PGN2/3R2S2/LN3GK1L w 
 
 着手前の局面:
 
+![44手目の局面](img/lcfsldgp37mt_044.svg)
+
+🔴 実戦 △８七歩打　🔵 AI推奨 △７二飛(82)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：歩
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -233,6 +255,8 @@ SFEN: `ln3g1nl/1r2gbs2/3p1p1k1/p3psppp/1p1P5/P1P1SPPPP/1PB1PGN2/3R2S2/LN3GK1L w 
 後手番
 手数＝43　▲８六同歩　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -253,6 +277,12 @@ SFEN: `ln3g1nl/1r2gbs2/3p1p1k1/p3psppp/3P5/PPP1SPPPP/2B1PGN2/3R2S2/LN3GK1L w Pp 
 
 着手前の局面:
 
+![46手目の局面](img/lcfsldgp37mt_046.svg)
+
+🔴 実戦 △３三銀(44)　🔵 AI推奨 △７二飛(82)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：なし
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -271,6 +301,8 @@ SFEN: `ln3g1nl/1r2gbs2/3p1p1k1/p3psppp/3P5/PPP1SPPPP/2B1PGN2/3R2S2/LN3GK1L w Pp 
 後手番
 手数＝45　▲４五銀　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -291,6 +323,12 @@ SFEN: `ln3g1nl/1r2gbs2/3p1p1k1/p3psppp/3P1S3/PPP2PPPP/1pB1PGN2/3R2S2/LN3GK1L w P
 
 着手前の局面:
 
+![54手目の局面](img/lcfsldgp37mt_054.svg)
+
+🔴 実戦 △同玉(23)　🔵 AI推奨 △１二玉(23)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角　歩二
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -309,6 +347,8 @@ SFEN: `ln3g1nl/1r2gbs2/3p1p1k1/p3psppp/3P1S3/PPP2PPPP/1pB1PGN2/3R2S2/LN3GK1L w P
 後手番
 手数＝53　▲２四歩　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -329,6 +369,12 @@ SFEN: `ln3g1nl/4g1s2/3p1psk1/p3p1pPp/3P1S3/P1r2PP1P/1pB1PGN2/3R2S2/LN3GK1L w 2Pb
 
 着手前の局面:
 
+![58手目の局面](img/lcfsldgp37mt_058.svg)
+
+🔴 実戦 △同歩(63)　🔵 AI推奨 △２七歩打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角　歩三
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -347,6 +393,8 @@ SFEN: `ln3g1nl/4g1s2/3p1psk1/p3p1pPp/3P1S3/P1r2PP1P/1pB1PGN2/3R2S2/LN3GK1L w 2Pb
 後手番
 手数＝57　▲６四歩　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -367,6 +415,12 @@ SFEN: `ln3g1nl/4g1s2/3p1psk1/p2Pp1p1p/5S1P1/P1r2PP1P/1pB1PGN2/3R2S2/LN3GK1L w Pb
 
 着手前の局面:
 
+![64手目の局面](img/lcfsldgp37mt_064.svg)
+
+🔴 実戦 △８九と(88)　🔵 AI推奨 △８七と(88)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角　歩三
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -385,6 +439,8 @@ SFEN: `ln3g1nl/4g1s2/3p1psk1/p2Pp1p1p/5S1P1/P1r2PP1P/1pB1PGN2/3R2S2/LN3GK1L w Pb
 後手番
 手数＝63　▲３八金　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -405,6 +461,12 @@ SFEN: `ln3g1nl/4g1s2/5psk1/p2Rp1p1p/5S1P1/P1r2PP1P/2B1PGNS1/1+p4G2/LN4K1L w 3Pb3
 
 着手前の局面:
 
+![66手目の局面](img/lcfsldgp37mt_066.svg)
+
+🔴 実戦 △同玉(23)　🔵 AI推奨 △２二玉(23)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角　桂　歩三
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -423,6 +485,8 @@ SFEN: `ln3g1nl/4g1s2/5psk1/p2Rp1p1p/5S1P1/P1r2PP1P/2B1PGNS1/1+p4G2/LN4K1L w 3Pb3
 後手番
 手数＝65　▲２四歩　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -443,6 +507,12 @@ SFEN: `ln3g1nl/4g1s2/5psk1/p2Rp1pPp/5S3/P1r2PP1P/2B1PGNS1/6G2/L+p4K1L w 3Pbn3p 6
 
 着手前の局面:
 
+![68手目の局面](img/lcfsldgp37mt_068.svg)
+
+🔴 実戦 △同桂(21)　🔵 AI推奨 △同玉(24)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角　桂　歩四
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -461,6 +531,8 @@ SFEN: `ln3g1nl/4g1s2/5psk1/p2Rp1pPp/5S3/P1r2PP1P/2B1PGNS1/6G2/L+p4K1L w 3Pbn3p 6
 後手番
 手数＝67　▲３三角成　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|

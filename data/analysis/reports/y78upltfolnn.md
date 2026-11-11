@@ -139,6 +139,12 @@ xychart-beta
 
 着手前の局面:
 
+![19手目の局面](img/y78upltfolnn_019.svg)
+
+🔴 実戦 ▲３六歩(37)　🔵 AI推奨 ▲４八飛(28)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -156,6 +162,8 @@ xychart-beta
 先手の持駒：角
 手数＝18　△７二玉　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -176,6 +184,12 @@ SFEN: `lnsg3nl/2k2rg2/ppppps1pp/5pp2/9/2P1SP1P1/PPSPP1P1P/2G4R1/LN2KG1NL b Bb 19
 
 着手前の局面:
 
+![21手目の局面](img/y78upltfolnn_021.svg)
+
+🔴 実戦 ▲３七桂(29)　🔵 AI推奨 ▲６六銀(77)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -193,6 +207,8 @@ SFEN: `lnsg3nl/2k2rg2/ppppps1pp/5pp2/9/2P1SP1P1/PPSPP1P1P/2G4R1/LN2KG1NL b Bb 19
 先手の持駒：角
 手数＝20　△３三桂　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -213,6 +229,12 @@ SFEN: `lnsg4l/2k2rg2/pppppsnpp/5pp2/9/2P1SPPP1/PPSPP3P/2G4R1/LN2KG1NL b Bb 21`
 
 着手前の局面:
 
+![23手目の局面](img/y78upltfolnn_023.svg)
+
+🔴 実戦 ▲６六歩(67)　🔵 AI推奨 ▲４八飛(28)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -230,6 +252,8 @@ SFEN: `lnsg4l/2k2rg2/pppppsnpp/5pp2/9/2P1SPPP1/PPSPP3P/2G4R1/LN2KG1NL b Bb 21`
 先手の持駒：角
 手数＝22　△８二玉　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -250,6 +274,12 @@ SFEN: `lnsg4l/1k3rg2/pppppsnpp/5pp2/9/2P1SPPP1/PPSPP1N1P/2G4R1/LN2KG2L b Bb 23`
 
 着手前の局面:
 
+![29手目の局面](img/y78upltfolnn_029.svg)
+
+🔴 実戦 ▲４七銀(56)　🔵 AI推奨 ▲６九角打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：なし
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -267,6 +297,8 @@ SFEN: `lnsg4l/1k3rg2/pppppsnpp/5pp2/9/2P1SPPP1/PPSPP1N1P/2G4R1/LN2KG2L b Bb 23`
 先手の持駒：角
 手数＝28　△２七角　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -287,6 +319,12 @@ SFEN: `ln1g4l/1ks2rg2/ppppp1npp/4spp2/9/2PPSPPP1/PPS1P1NbP/2GK1R3/LN3G2L b B 29`
 
 着手前の局面:
 
+![35手目の局面](img/y78upltfolnn_035.svg)
+
+🔴 実戦 ▲３八金(49)　🔵 AI推奨 ▲４六歩打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：桂　歩
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -304,6 +342,8 @@ SFEN: `ln1g4l/1ks2rg2/ppppp1npp/4spp2/9/2PPSPPP1/PPS1P1NbP/2GK1R3/LN3G2L b B 29`
 先手の持駒：角　桂　歩
 手数＝34　△４五同銀　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|

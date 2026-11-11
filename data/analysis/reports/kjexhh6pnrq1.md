@@ -170,6 +170,12 @@ xychart-beta
 
 着手前の局面:
 
+![36手目の局面](img/kjexhh6pnrq1_036.svg)
+
+🔴 実戦 △２五歩(24)　🔵 AI推奨 △３五銀(44)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：なし
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -188,6 +194,8 @@ xychart-beta
 後手番
 手数＝35　▲４六歩　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -208,6 +216,12 @@ SFEN: `ln3gb1l/1r2g1s2/2pp1pnk1/p3psppp/1p7/2PP1P2P/PPBSP1PP1/1R3G1SL/LN4GNK w -
 
 着手前の局面:
 
+![40手目の局面](img/kjexhh6pnrq1_040.svg)
+
+🔴 実戦 △２六歩(25)　🔵 AI推奨 △７四歩(73)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：なし
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -226,6 +240,8 @@ SFEN: `ln3gb1l/1r2g1s2/2pp1pnk1/p3psppp/1p7/2PP1P2P/PPBSP1PP1/1R3G1SL/LN4GNK w -
 後手番
 手数＝39　▲４七銀　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -246,6 +262,12 @@ SFEN: `ln3gb1l/1r2g1s2/2pp1pnk1/p3p1p1p/1p4sp1/2PP1P2P/PPB1PSPP1/1R3G1SL/LN4GNK 
 
 着手前の局面:
 
+![48手目の局面](img/kjexhh6pnrq1_048.svg)
+
+🔴 実戦 △７四歩(73)　🔵 AI推奨 △５三角(31)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：歩
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -264,6 +286,8 @@ SFEN: `ln3gb1l/1r2g1s2/2pp1pnk1/p3p1p1p/1p4sp1/2PP1P2P/PPB1PSPP1/1R3G1SL/LN4GNK 
 後手番
 手数＝47　▲３八金寄　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -284,6 +308,12 @@ SFEN: `ln3gb1l/1r2g1s2/2pp1pnk1/p3p1psp/1p7/2PP1PP1P/PPB1PS1P1/1R4GSL/LN4GNK w p
 
 着手前の局面:
 
+![72手目の局面](img/kjexhh6pnrq1_072.svg)
+
+🔴 実戦 △７六歩打　🔵 AI推奨 △８三馬(93)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：桂　歩六
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -302,6 +332,8 @@ SFEN: `ln3gb1l/1r2g1s2/2pp1pnk1/p3p1psp/1p7/2PP1PP1P/PPB1PS1P1/1R4GSL/LN4GNK w p
 後手番
 手数＝71　▲７四龍　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -322,6 +354,12 @@ SFEN: `ln3g2l/1r2g1s2/+b4pk2/p1+Rppb2p/1p4p2/5P2P/PPN2S1P1/6GSL/L5GNK w Sn6p 72`
 
 着手前の局面:
 
+![76手目の局面](img/kjexhh6pnrq1_076.svg)
+
+🔴 実戦 △８六歩(85)　🔵 AI推奨 △５五桂打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：桂　歩四
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -340,6 +378,8 @@ SFEN: `ln3g2l/1r2g1s2/+b4pk2/p1+Rppb2p/1p4p2/5P2P/PPN2S1P1/6GSL/L5GNK w Sn6p 72`
 後手番
 手数＝75　▲６七龍　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -360,6 +400,12 @@ SFEN: `ln3g2l/1r2g1s2/+b4pk2/p2ppb2p/1pp3p2/5P2P/PPN+R1S1P1/6GSL/L5GNK w SPn4p 7
 
 着手前の局面:
 
+![84手目の局面](img/kjexhh6pnrq1_084.svg)
+
+🔴 実戦 △６六歩打　🔵 AI推奨 △７七歩成(76)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：桂　歩五
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -378,6 +424,8 @@ SFEN: `ln3g2l/1r2g1s2/+b4pk2/p2ppb2p/1pp3p2/5P2P/PPN+R1S1P1/6GSL/L5GNK w SPn4p 7
 後手番
 手数＝83　▲６四歩　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -398,6 +446,12 @@ SFEN: `ln3g2l/4g1s2/+b3bpk2/p2Pp3p/5Pp2/1rp5P/P1N+R1S1P1/6GSL/L5GNK w S2Pn5p 84`
 
 着手前の局面:
 
+![86手目の局面](img/kjexhh6pnrq1_086.svg)
+
+🔴 実戦 △７七歩成(76)　🔵 AI推奨 △４二桂打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：桂　歩四
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -416,6 +470,8 @@ SFEN: `ln3g2l/4g1s2/+b3bpk2/p2Pp3p/5Pp2/1rp5P/P1N+R1S1P1/6GSL/L5GNK w S2Pn5p 84`
 後手番
 手数＝85　▲５七龍　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -436,6 +492,12 @@ SFEN: `ln3g2l/4g1s2/+b3bpk2/p2Pp3p/5Pp2/1rpp4P/P1N1+RS1P1/6GSL/L5GNK w S2Pn4p 86
 
 着手前の局面:
 
+![90手目の局面](img/kjexhh6pnrq1_090.svg)
+
+🔴 実戦 △５七と(67)　🔵 AI推奨 △４二金(52)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：桂二　歩四
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -454,6 +516,8 @@ SFEN: `ln3g2l/4g1s2/+b3bpk2/p2Pp3p/5Pp2/1rpp4P/P1N1+RS1P1/6GSL/L5GNK w S2Pn4p 86
 後手番
 手数＝89　▲５四龍　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|

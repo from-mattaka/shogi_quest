@@ -176,6 +176,12 @@ xychart-beta
 
 着手前の局面:
 
+![31手目の局面](img/00hm06fbajl1_031.svg)
+
+🔴 実戦 ▲７九玉(69)　🔵 AI推奨 ▲５九金(49)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：なし
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -193,6 +199,8 @@ xychart-beta
 先手の持駒：歩二
 手数＝30　△８一飛　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -213,6 +221,12 @@ SFEN: `lr4snl/3kg1gb1/2nspppp1/p1p5p/1p7/P1P4RP/1PBPPPP2/2GS1S3/LN1K1G1NL b 2P 3
 
 着手前の局面:
 
+![43手目の局面](img/00hm06fbajl1_043.svg)
+
+🔴 実戦 ▲８八玉(79)　🔵 AI推奨 ▲４七銀(48)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：なし
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -230,6 +244,8 @@ SFEN: `lr4snl/3kg1gb1/2nspppp1/p1p5p/1p7/P1P4RP/1PBPPPP2/2GS1S3/LN1K1G1NL b 2P 3
 先手の持駒：歩二
 手数＝42　△５四歩　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -250,6 +266,12 @@ SFEN: `lr7/3kgsg1l/2ns1pnp1/p1p1pbp1p/1p7/P1PP1P2P/1PBSP1P2/2G1GS1R1/LNK4NL b 2P
 
 着手前の局面:
 
+![45手目の局面](img/00hm06fbajl1_045.svg)
+
+🔴 実戦 ▲２四歩打　🔵 AI推奨 ▲４七銀(48)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：なし
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -267,6 +289,8 @@ SFEN: `lr7/3kgsg1l/2ns1pnp1/p1p1pbp1p/1p7/P1PP1P2P/1PBSP1P2/2G1GS1R1/LNK4NL b 2P
 先手の持駒：歩二
 手数＝44　△１一飛　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -287,6 +311,12 @@ SFEN: `l7r/3kgsg1l/2ns1pnp1/p1p1pbp1p/1p7/P1PP1P2P/1PBSP1P2/1KG1GS1R1/LN5NL b 2P
 
 着手前の局面:
 
+![63手目の局面](img/00hm06fbajl1_063.svg)
+
+🔴 実戦 ▲２四歩打　🔵 AI推奨 ▲８四香打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：歩二
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -304,6 +334,8 @@ SFEN: `l7r/3kgsg1l/2ns1pnp1/p1p1pbp1p/1p7/P1PP1P2P/1PBSP1P2/1KG1GS1R1/LN5NL b 2P
 先手の持駒：香　歩
 手数＝62　△５三角　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -324,6 +356,12 @@ SFEN: `l7r/3kgsg1p/2nsbpnp1/p1p1p1R1P/1p3P2L/P1PP5/1PBSP1P2/1KG1GS3/LN5N1 b LP2p
 
 着手前の局面:
 
+![69手目の局面](img/00hm06fbajl1_069.svg)
+
+🔴 実戦 ▲６五歩(66)　🔵 AI推奨 ▲同歩(37)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：歩
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -341,6 +379,8 @@ SFEN: `l7r/3kgsg1p/2nsbpnp1/p1p1p1R1P/1p3P2L/P1PP5/1PBSP1P2/1KG1GS3/LN5N1 b LP2p
 先手の持駒：香　歩
 手数＝68　△３六歩　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|

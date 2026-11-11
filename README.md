@@ -51,3 +51,26 @@
 | 水匠5 (`suisho5`) | 5分 | 77 | 3140 | 26 | 172 | 195 | 159 | 11.7% | 4.77 |
 
 悪手率 = (大悪手 + 悪手) / 自分の手数。一覧: [`data/analysis/mistakes.csv`](data/analysis/mistakes.csv)
+
+## ローカルでの分析手順（定期的に手動で実行）
+
+対局の収集は Actions が自動で行います。分析は次の順にローカルで実行します（初回セットアップは [`docs/mistake_analysis.md`](docs/mistake_analysis.md) の「初回セットアップ」）。
+2・3 は 1 の結果（`data/analysis/`）を読むだけなので、必ず 1 の後に実行します。
+
+```bash
+git pull                                         # 0. Actions が収集した対局を取り込む
+.venv/bin/python analyze_mistakes.py             # 1. 局面の解析（悪手検出。未解析の対局だけ。1局30〜60秒）
+.venv/bin/python make_quiz.py                    # 2. 悪手の問題集（quiz/index.html）を作り直す
+.venv/bin/python analyze_opening_study.py        # 3. 序盤の同一局面での悪手の分析（data/analysis/study/）
+git add data/analysis quiz README.md docs/ai/AI_CONTEXT.md
+git commit -m "analysis: ..." && git push
+```
+
+| 手順 | 内容 | 説明 |
+|---|---|---|
+| 1. `analyze_mistakes.py` | 将棋AIで対局を解析し、レポート・`mistakes.csv`・README を更新 | [`docs/mistake_analysis.md`](docs/mistake_analysis.md) |
+| 2. `make_quiz.py` | `mistakes.csv` から次の一手問題集を作る（エンジン不要・数秒） | [`docs/mistake_analysis.md`](docs/mistake_analysis.md) の「次の一手問題集」 |
+| 3. `analyze_opening_study.py` | 序盤に繰り返し出た同じ局面での悪手をまとめる（エンジン不要・数秒） | [`docs/opening_study.md`](docs/opening_study.md) |
+
+- 解析対象の確認だけなら `analyze_mistakes.py --dry-run`。途中で Ctrl+C しても、次回は続きから再開します
+- push で README が競合したら `analyze_mistakes.py --regen-only` で作り直します

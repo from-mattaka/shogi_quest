@@ -1,6 +1,7 @@
 """解析結果を CSV 行・Markdown レポートに変換する。"""
 from __future__ import annotations
 
+from . import board_svg
 from .env import EngineInfo
 from .evaluator import winrate_drop
 from .kifu import Game
@@ -92,6 +93,22 @@ def _chart(game: Game, ga: GameAnalysis, p: Params) -> list[str]:
     ]
 
 
+def board_image_rel(game_id: str, ply: int) -> str:
+    """レポート（reports/{game_id}.md）から見た盤面画像の相対パス。"""
+    return f"img/{game_id}_{ply:03d}.svg"
+
+
+def board_images(game_id: str, game: Game, ga: GameAnalysis) -> dict[str, str]:
+    """課題局面ごとの盤面画像 {reports からの相対パス: SVG}。"""
+    out = {}
+    for m in ga.mistakes:
+        k = m.ply - 1
+        out[board_image_rel(game_id, m.ply)] = board_svg.position_svg(
+            m.sfen_before, m.ply, played=m.move_usi, best=m.candidates[0][0] if m.candidates else None,
+            last=game.moves[k - 1] if k > 0 else None, my_turn=ga.my_turn)
+    return out
+
+
 def markdown(meta: dict, game: Game, ga: GameAnalysis, p: Params, info: EngineInfo, analyzed_at: str) -> str:
     gid = meta["game_id"]
     up = "../../../"
@@ -168,9 +185,8 @@ def markdown(meta: dict, game: Game, ga: GameAnalysis, p: Params, info: EngineIn
             "",
             "着手前の局面:",
             "",
-            "```text",
-            m.bod_before,
-            "```",
+            *board_svg.markdown_block(board_image_rel(gid, m.ply), f"{m.ply}手目の局面", m.bod_before,
+                                      m.move_ja, m.candidates[0][1] if m.candidates else None),
             "",
             "| | 指し手 | 評価値 | 読み筋 |",
             "|---|---|--:|---|",

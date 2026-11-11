@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="424" viewBox="0 0 512 424" font-family="'Noto Sans JP','Noto Sans CJK JP','Hiragino Sans','Yu Gothic','Meiryo',sans-serif">
+<style>.p{font-family:'Noto Serif JP','Noto Serif CJK JP','Hiragino Mincho ProN','Yu Mincho','YuMincho','MS Mincho',serif;font-size:21px;font-weight:bold;text-anchor:middle;fill:#111}.r{fill:#b00000}.c{font-size:14px;fill:#333;text-anchor:middle}</style>
+<defs>
+<polygon id="k" points="0,-17 11,-13 15,17 -15,17 -11,-13" fill="#f7dfa4" stroke="#7a5a2a" stroke-width="1"/>
+<marker id="ah-played" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d62728"/></marker>
+<marker id="ah-best" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f6fd1"/></marker>
+</defs>
+<rect width="512" height="424" fill="#ffffff"/>
+<rect x="64" y="26" width="360" height="360" fill="#eac677" stroke="#3b2a12" stroke-width="2"/>
+<rect x="264" y="266" width="40" height="40" fill="#ffe36e" opacity="0.85"/>
+<path d="M104,26v360M64,66h360M144,26v360M64,106h360M184,26v360M64,146h360M224,26v360M64,186h360M264,26v360M64,226h360M304,26v360M64,266h360M344,26v360M64,306h360M384,26v360M64,346h360" stroke="#3b2a12" stroke-width="0.8"/>
+<circle cx="184" cy="146" r="2.6" fill="#3b2a12"/>
+<circle cx="184" cy="266" r="2.6" fill="#3b2a12"/>
+<circle cx="304" cy="146" r="2.6" fill="#3b2a12"/>
+<circle cx="304" cy="266" r="2.6" fill="#3b2a12"/>
+<text class="c" x="84" y="18">９</text>
+<text class="c" x="124" y="18">８</text>
+<text class="c" x="164" y="18">７</text>
+<text class="c" x="204" y="18">６</text>
+<text class="c" x="244" y="18">５</text>
+<text class="c" x="284" y="18">４</text>
+<text class="c" x="324" y="18">３</text>
+<text class="c" x="364" y="18">２</text>
+<text class="c" x="404" y="18">１</text>
+<text class="c" x="436" y="51">一</text>
+<text class="c" x="436" y="91">二</text>
+<text class="c" x="436" y="131">三</text>
+<text class="c" x="436" y="171">四</text>
+<text class="c" x="436" y="211">五</text>
+<text class="c" x="436" y="251">六</text>
+<text class="c" x="436" y="291">七</text>
+<text class="c" x="436" y="331">八</text>
+<text class="c" x="436" y="371">九</text>
+<g transform="translate(404,46) rotate(180)"><use href="#k"/><text class="p" y="7">香</text></g>
+<g transform="translate(404,126) rotate(180)"><use href="#k"/><text class="p" y="7">歩</text></g>
+<g transform="translate(404,286)"><use href="#k"/><text class="p" y="7">歩</text></g>
+<g transform="translate(404,366)"><use href="#k"/><text class="p" y="7">香</text></g>
+<g transform="translate(364,46) rotate(180)"><use href="#k"/><text class="p" y="7">桂</text></g>
+<g transform="translate(364,126) rotate(180)"><use href="#k"/><text class="p" y="7">歩</text></g>
+<g transform="translate(364,206)"><use href="#k"/><text class="p" y="7">歩</text></g>
+<g transform="translate(364,326)"><use href="#k"/><text class="p" y="7">飛</text></g>
+<g transform="translate(364,366)"><use href="#k"/><text class="p" y="7">桂</text></g>
+<g transform="translate(324,126) rotate(180)"><use href="#k"/><text class="p" y="7">角</text></g>
+<g transform="translate(324,166) rotate(180)"><use href="#k"/><text class="p" y="7">銀</text></g>
+<g transform="translate(284,246)"><use href="#k"/><text class="p" y="7">歩</text></g>
+<g transform="translate(284,286) rotate(180)"><use href="#k"/><text class="p" y="7">歩</text></g>
+<g transform="translate(284,326)"><use href="#k"/><text class="p" y="7">角</text></g>
+<g transform="translate(284,366)"><use href="#k"/><text class="p" y="7">金</text></g>
+<g transform="translate(244,246) rotate(180)"><use href="#k"/><text class="p" y="7">歩</text></g>
+<g transform="translate(204,166) rotate(180)"><use href="#k"/><text class="p" y="7">金</text></g>
+<g transform="translate(204,206) rotate(180)"><use href="#k"/><text class="p" y="7">歩</text></g>
+<g transform="translate(204,286)"><use href="#k"/><text class="p" y="7">歩</text></g>
+<g transform="translate(204,366)"><use href="#k"/><text class="p" y="7">金</text></g>
+<g transform="translate(164,46) rotate(180)"><use href="#k"/><text class="p" y="7">金</text></g>
+<g transform="translate(164,86) rotate(180)"><use href="#k"/><text class="p" y="7">飛</text></g>
+<g transform="translate(164,166) rotate(180)"><use href="#k"/><text class="p" y="7">歩</text></g>
+<g transform="translate(164,246)"><use href="#k"/><text class="p" y="7">歩</text></g>
+<g transform="translate(164,286)"><use href="#k"/><text class="p" y="7">桂</text></g>
+<g transform="translate(164,326)"><use href="#k"/><text class="p" y="7">銀</text></g>
+<g transform="translate(124,46) rotate(180)"><use href="#k"/><text class="p" y="7">桂</text></g>
+<g transform="translate(124,86) rotate(180)"><use href="#k"/><text class="p" y="7">銀</text></g>
+<g transform="translate(124,126) rotate(180)"><use href="#k"/><text class="p" y="7">歩</text></g>
+<g transform="translate(124,246)"><use href="#k"/><text class="p" y="7">銀</text></g>
+<g transform="translate(124,286)"><use href="#k"/><text class="p" y="7">玉</text></g>
+<g transform="translate(84,46) rotate(180)"><use href="#k"/><text class="p" y="7">王</text></g>
+<g transform="translate(84,86) rotate(180)"><use href="#k"/><text class="p" y="7">香</text></g>
+<g transform="translate(84,126) rotate(180)"><use href="#k"/><text class="p" y="7">歩</text></g>
+<g transform="translate(84,206)"><use href="#k"/><text class="p" y="7">歩</text></g>
+<g transform="translate(84,366)"><use href="#k"/><text class="p" y="7">香</text></g>
+<rect x="456" y="304" width="54" height="82" rx="5" fill="#fff4d6" stroke="#c9902b" stroke-width="2"/>
+<text x="483" y="322" font-size="15" text-anchor="middle" fill="#222">☗</text>
+<text x="483" y="339" font-size="11" text-anchor="middle" fill="#444">先手</text>
+<g transform="translate(476,367) scale(0.85)"><use href="#k"/><text class="p" y="7">歩</text></g>
+<text x="499" y="381.0" font-size="12" font-weight="bold" text-anchor="middle" fill="#222">三</text>
+<rect x="0" y="26" width="54" height="82" rx="5" fill="#f4f4f4" stroke="#cccccc" stroke-width="1"/>
+<text x="27" y="44" font-size="15" text-anchor="middle" fill="#222">☖</text>
+<text x="27" y="61" font-size="11" text-anchor="middle" fill="#444">後手</text>
+<g transform="translate(20,89) scale(0.85)"><use href="#k"/><text class="p" y="7">歩</text></g>
+<line x1="293.9" y1="335.9" x2="318.3" y2="360.3" stroke="#1f6fd1" stroke-width="5" stroke-linecap="round" opacity="0.72" marker-end="url(#ah-best)"/>
+<line x1="293.9" y1="316.1" x2="318.3" y2="291.7" stroke="#d62728" stroke-width="5" stroke-linecap="round" opacity="0.72" marker-end="url(#ah-played)"/>
+<text x="244" y="414" font-size="14" text-anchor="middle" fill="#222">59手目の局面（☗先手番）</text>
+</svg>

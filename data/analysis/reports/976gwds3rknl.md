@@ -154,6 +154,12 @@ xychart-beta
 
 着手前の局面:
 
+![45手目の局面](img/976gwds3rknl_045.svg)
+
+🔴 実戦 ▲同飛(28)　🔵 AI推奨 ▲７五歩(76)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角　歩二
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -171,6 +177,8 @@ xychart-beta
 先手の持駒：角　歩
 手数＝44　△２四同歩　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -191,6 +199,12 @@ SFEN: `lr4knl/3g2g2/2n1p4/p1ppssppp/1p7/P1PPS1P1P/1PS1P1N2/2G1G2R1/LNK5L b BPb2p
 
 着手前の局面:
 
+![55手目の局面](img/976gwds3rknl_055.svg)
+
+🔴 実戦 ▲４五銀(56)　🔵 AI推奨 ▲２三歩打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角　歩二
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -208,6 +222,8 @@ SFEN: `lr4knl/3g2g2/2n1p4/p1ppssppp/1p7/P1PPS1P1P/1PS1P1N2/2G1G2R1/LNK5L b BPb2p
 先手の持駒：角　歩
 手数＝54　△２二同金　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -228,6 +244,12 @@ SFEN: `lr4knl/3g3g1/2n1pp3/p1ppss1Rp/1p4p2/P1PPS1P1P/1PS1P1N2/2G1G4/LNK5L b BPb2
 
 着手前の局面:
 
+![57手目の局面](img/976gwds3rknl_057.svg)
+
+🔴 実戦 ▲３四飛(24)　🔵 AI推奨 ▲５四銀(45)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角　歩
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -245,6 +267,8 @@ SFEN: `lr4knl/3g3g1/2n1pp3/p1ppss1Rp/1p4p2/P1PPS1P1P/1PS1P1N2/2G1G4/LNK5L b BPb2
 先手の持駒：角　歩
 手数＝56　△２三歩　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -265,6 +289,12 @@ SFEN: `lr4knl/3g3g1/2n1pp1p1/p1ppss1Rp/1p3Sp2/P1PP2P1P/1PS1P1N2/2G1G4/LNK5L b BP
 
 着手前の局面:
 
+![63手目の局面](img/976gwds3rknl_063.svg)
+
+🔴 実戦 ▲８八玉(79)　🔵 AI推奨 ▲６三銀打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：飛　角　銀　歩
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -282,6 +312,8 @@ SFEN: `lr4knl/3g3g1/2n1pp1p1/p1ppss1Rp/1p3Sp2/P1PP2P1P/1PS1P1N2/2G1G4/LNK5L b BP
 先手の持駒：角　金　銀　歩
 手数＝62　△５四同歩　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -302,6 +334,12 @@ SFEN: `lr4knl/3g5/2n2psp1/p1ppp3p/1p4p2/P1PP2P1P/1PS1P1N2/2G1G4/LNK5L b BGSPrbsp
 
 着手前の局面:
 
+![87手目の局面](img/976gwds3rknl_087.svg)
+
+🔴 実戦 ▲６二飛成(42)　🔵 AI推奨 ▲３二金(43)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：角　銀　桂二　歩三
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -319,6 +357,8 @@ SFEN: `lr4knl/3g5/2n2psp1/p1ppp3p/1p4p2/P1PP2P1P/1PS1P1N2/2G1G4/LNK5L b BGSPrbsp
 先手の持駒：なし
 手数＝86　△２二銀打　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|

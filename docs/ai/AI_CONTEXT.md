@@ -20,7 +20,9 @@
 │       ├── analysis_index.csv   # 解析済み対局の台帳（使用エンジン・評価関数・件数）
 │       ├── mistakes.csv         # 悪手・疑問手の一覧（全対局分）
 │       ├── moves/{game_id}.csv  # 1手ごとの評価値・期待勝率の推移
-│       └── reports/{game_id}.md # 対局別の解析レポート（盤面図・候補手つき）
+│       ├── reports/{game_id}.md # 対局別の解析レポート（盤面図・候補手つき）
+│       ├── reports/img/{game_id}_{ply}.svg # レポートの盤面画像（テキストの盤面図・SFEN はレポート本文にもある）
+│       └── study/               # 序盤研究ドリル（analyze_opening_study.py の出力。盤面画像は study/img/）
 ├── docs/
 │   ├── mistake_analysis.md      # 悪手検出（analyze_mistakes.py）の説明
 │   ├── engine_model.md          # 評価関数の確認・切り替え手順

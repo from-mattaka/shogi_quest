@@ -139,6 +139,12 @@ xychart-beta
 
 着手前の局面:
 
+![20手目の局面](img/zvyjto28318r_020.svg)
+
+🔴 実戦 △７三銀(62)　🔵 AI推奨 △３二玉(42)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：なし
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -157,6 +163,8 @@ xychart-beta
 後手番
 手数＝19　▲６六歩　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -177,6 +185,12 @@ SFEN: `ln1g1g1nl/1r1s1k1b1/p2ppp1pp/2p2sp2/1p2P4/2PP5/PPB2PPPP/2GSR1K2/LN3GSNL w
 
 着手前の局面:
 
+![28手目の局面](img/zvyjto28318r_028.svg)
+
+🔴 実戦 △９四歩(93)　🔵 AI推奨 △６九銀打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：銀　歩
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -195,6 +209,8 @@ SFEN: `ln1g1g1nl/1r1s1k1b1/p2ppp1pp/2p2sp2/1p2P4/2PP5/PPB2PPPP/2GSR1K2/LN3GSNL w
 後手番
 手数＝27　▲６七銀　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -215,6 +231,12 @@ SFEN: `ln1g1g1nl/1r3k1b1/p2ppp1pp/2p3p2/1p2s4/2PP5/PPBS1PPPP/2G1R1K2/LN3GSNL w s
 
 着手前の局面:
 
+![36手目の局面](img/zvyjto28318r_036.svg)
+
+🔴 実戦 △６四銀(55)　🔵 AI推奨 △８六銀打　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：銀　歩
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -233,6 +255,8 @@ SFEN: `ln1g1g1nl/1r3k1b1/p2ppp1pp/2p3p2/1p2s4/2PP5/PPBS1PPPP/2G1R1K2/LN3GSNL w s
 後手番
 手数＝35　▲５六銀　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -253,6 +277,12 @@ SFEN: `l4g1nl/1r2g1kb1/2nppp1pp/p1p3p2/1p2s4/2PPS4/PPB1GPPPP/2G3K2/LN2R1SNL w sp
 
 着手前の局面:
 
+![38手目の局面](img/zvyjto28318r_038.svg)
+
+🔴 実戦 △５四歩(53)　🔵 AI推奨 △７五歩(74)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：銀　歩
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -271,6 +301,8 @@ SFEN: `l4g1nl/1r2g1kb1/2nppp1pp/p1p3p2/1p2s4/2PPS4/PPB1GPPPP/2G3K2/LN2R1SNL w sp
 後手番
 手数＝37　▲４六金　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|
@@ -291,6 +323,12 @@ SFEN: `l4g1nl/1r2g1kb1/2nppp1pp/p1ps2p2/1p7/2PPSG3/PPB2PPPP/2G3K2/LN2R1SNL w sp 
 
 着手前の局面:
 
+![40手目の局面](img/zvyjto28318r_040.svg)
+
+🔴 実戦 △７七角成(22)　🔵 AI推奨 △同桂(73)　🟨 直前の相手の指し手
+
+<details><summary>テキストの盤面図（BOD・将棋ソフトに貼り付け可）</summary>
+
 ```text
 後手の持駒：銀　歩
   ９ ８ ７ ６ ５ ４ ３ ２ １
@@ -309,6 +347,8 @@ SFEN: `l4g1nl/1r2g1kb1/2nppp1pp/p1ps2p2/1p7/2PPSG3/PPB2PPPP/2G3K2/LN2R1SNL w sp 
 後手番
 手数＝39　▲６五歩　まで
 ```
+
+</details>
 
 | | 指し手 | 評価値 | 読み筋 |
 |---|---|--:|---|

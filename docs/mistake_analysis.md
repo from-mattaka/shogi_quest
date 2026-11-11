@@ -19,7 +19,7 @@
 | README | `README.md` | 直近の対局一覧の「悪手検出」列にレポートへのリンクと件数。評価関数・持ち時間別の悪手率 |
 | AI 相談用 | `docs/ai/AI_CONTEXT.md` | 解析データのカラム定義、集計（持ち時間別・勝敗別・手数帯別）、低下幅が大きい手の上位 |
 
-レポートは GitHub のブラウザ表示だけで振り返れるように作っています。盤面はテキストの盤面図（BOD 形式）、グラフは Mermaid で表示します。
+レポートは GitHub のブラウザ表示だけで振り返れるように作っています。盤面は将棋ソフト風の画像（SVG。`reports/img/` に保存）で、実戦の指し手を赤、AI の推奨手を青の矢印、直前の相手の指し手を黄色のマスで示します。後手番の対局は後手側から見た向きで描きます。テキストの盤面図（BOD 形式）も画像の下に折りたたんで残しているので、将棋ソフトへの貼り付けや生成AIへの相談に使えます。グラフは Mermaid で表示します。
 
 ### 判定カテゴリ
 
@@ -124,6 +124,7 @@ git commit -m "analysis: ..." && git push
 | `analyze_mistakes.py --threads 4 --pass2-ms 3000` | 設定ファイルの値をその回だけ上書き |
 | `analyze_mistakes.py --models` / `--show-engine` | 評価関数の確認（[engine_model.md](engine_model.md)） |
 | `analyze_mistakes.py --regen-only` | README と AI_CONTEXT だけ作り直す（push で競合したときなど） |
+| `analyze_mistakes.py --redraw-boards` | 解析済みレポートの盤面画像を作り直す（エンジン不要。`mistakes.csv` と `moves/` から描く） |
 
 - **途中で止めても大丈夫です。** Ctrl+C で中断しても、解析が終わった対局までは保存済みで、次回は続きから再開します。
 - 次の対局は、フラグを付けなくても自動で再解析されます。
@@ -193,6 +194,7 @@ analysis/
 ├── env.py                 # [共通] エンジン・評価関数の場所の解決と、ロックファイルとの照合
 ├── engine.py              # [共通] USI プロトコルでエンジンを動かすラッパー
 ├── kifu.py                # [共通] cshogi で CSA→USI・SFEN・盤面図・日本語表記に変換
+├── board_svg.py           # [共通] SFEN から盤面画像（SVG）を作る（外部ライブラリ・通信なし）
 ├── schema.py              # [悪手検出] 出力ファイルのパス・カラム定義（標準ライブラリのみ。Actions 側の README 生成からも読む）
 ├── quiz_template.html     # [問題集] make_quiz.py が使う HTML テンプレート
 ├── evaluator.py           # [悪手検出] 勝率変換と判定ロジック（純粋関数。tests/ でテスト）
