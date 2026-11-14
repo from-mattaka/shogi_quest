@@ -1,6 +1,6 @@
 # 将棋クエスト対局記録 — qwalks
 
-最終更新: 2026-11-13T02:48:26+09:00　/　総対局数: **89**　/　悪手検出済み: **79**
+最終更新: 2026-11-14T10:45:23+09:00　/　総対局数: **89**　/　悪手検出済み: **89**
 
 > 対局は GitHub Actions が毎日自動収集し、悪手検出（将棋AIによる解析）はローカルで手動実行しています。生データ: [`data/games_summary.csv`](data/games_summary.csv)　AI 相談用: [`AI_CONTEXT.md`](docs/ai/AI_CONTEXT.md)　悪手検出の説明: [`docs/mistake_analysis.md`](docs/mistake_analysis.md)
 
@@ -20,16 +20,16 @@
 
 | 日時 | 持ち時間 | 手番 | 相手 | 結果 | 手数 | 終局理由 | 自レート | 棋譜 | 悪手検出 |
 |---|---|---|---|:-:|--:|---|--:|---|---|
-| 2026-11-11 08:13 | 5分 | ☗先 | 相手(1656) | ● 負 | 96 | 投了 | 1657 | [CSA](data/csa/shogi5/hssbkifqjuc4.csa) | - |
-| 2026-11-11 07:55 | 5分 | ☖後 | 相手(1494) | ● 負 | 87 | 時間切れ | 1665 | [CSA](data/csa/shogi5/bsxpb4pn004t.csa) | - |
-| 2026-11-11 07:44 | 5分 | ☖後 | 相手(1590) | ○ 勝 | 62 | 投了 | 1661 | [CSA](data/csa/shogi5/nyrkl8frg18k.csa) | - |
-| 2026-11-11 07:41 | 5分 | ☗先 | 相手(1656) | ○ 勝 | 99 | 時間切れ | 1655 | [CSA](data/csa/shogi5/ts75kqlqwyjy.csa) | - |
-| 2026-11-11 07:28 | 5分 | ☗先 | 相手(1487) | ○ 勝 | 111 | 詰み | 1651 | [CSA](data/csa/shogi5/gr88ed23d2qo.csa) | - |
-| 2026-11-11 04:39 | 5分 | ☗先 | 相手(1610) | ● 負 | 98 | 時間切れ | 1658 | [CSA](data/csa/shogi5/29w3l8boyi31.csa) | - |
-| 2026-11-11 04:29 | 5分 | ☖後 | 相手(1690) | ● 負 | 81 | 詰み | 1664 | [CSA](data/csa/shogi5/eaao9ztqwfjx.csa) | - |
-| 2026-11-11 04:19 | 5分 | ☖後 | 相手(1529) | ○ 勝 | 70 | 投了 | 1663 | [CSA](data/csa/shogi5/7dsyroqso91s.csa) | - |
-| 2026-11-11 04:16 | 5分 | ☗先 | 相手(1589) | ○ 勝 | 91 | 詰み | 1658 | [CSA](data/csa/shogi5/krkqyboegd0p.csa) | - |
-| 2026-11-11 04:06 | 5分 | ☖後 | 相手(1881) | ● 負 | 69 | 投了 | 1661 | [CSA](data/csa/shogi5/k39cdwfwahmq.csa) | - |
+| 2026-11-11 08:13 | 5分 | ☗先 | 相手(1656) | ● 負 | 96 | 投了 | 1657 | [CSA](data/csa/shogi5/hssbkifqjuc4.csa) | [水匠5](data/analysis/reports/hssbkifqjuc4.md) 逃0 大1 悪1 疑3 |
+| 2026-11-11 07:55 | 5分 | ☖後 | 相手(1494) | ● 負 | 87 | 時間切れ | 1665 | [CSA](data/csa/shogi5/bsxpb4pn004t.csa) | [水匠5](data/analysis/reports/bsxpb4pn004t.md) 逃0 大3 悪4 疑6 |
+| 2026-11-11 07:44 | 5分 | ☖後 | 相手(1590) | ○ 勝 | 62 | 投了 | 1661 | [CSA](data/csa/shogi5/nyrkl8frg18k.csa) | [水匠5](data/analysis/reports/nyrkl8frg18k.md) 逃0 大1 悪1 疑3 |
+| 2026-11-11 07:41 | 5分 | ☗先 | 相手(1656) | ○ 勝 | 99 | 時間切れ | 1655 | [CSA](data/csa/shogi5/ts75kqlqwyjy.csa) | [水匠5](data/analysis/reports/ts75kqlqwyjy.md) 逃0 大1 悪3 疑4 |
+| 2026-11-11 07:28 | 5分 | ☗先 | 相手(1487) | ○ 勝 | 111 | 詰み | 1651 | [CSA](data/csa/shogi5/gr88ed23d2qo.csa) | [水匠5](data/analysis/reports/gr88ed23d2qo.md) 逃0 大4 悪5 疑3 |
+| 2026-11-11 04:39 | 5分 | ☗先 | 相手(1610) | ● 負 | 98 | 時間切れ | 1658 | [CSA](data/csa/shogi5/29w3l8boyi31.csa) | [水匠5](data/analysis/reports/29w3l8boyi31.md) 逃0 大2 悪4 疑4 |
+| 2026-11-11 04:29 | 5分 | ☖後 | 相手(1690) | ● 負 | 81 | 詰み | 1664 | [CSA](data/csa/shogi5/eaao9ztqwfjx.csa) | [水匠5](data/analysis/reports/eaao9ztqwfjx.md) 逃0 大7 悪3 疑0 |
+| 2026-11-11 04:19 | 5分 | ☖後 | 相手(1529) | ○ 勝 | 70 | 投了 | 1663 | [CSA](data/csa/shogi5/7dsyroqso91s.csa) | [水匠5](data/analysis/reports/7dsyroqso91s.md) 逃1 大0 悪5 疑2 |
+| 2026-11-11 04:16 | 5分 | ☗先 | 相手(1589) | ○ 勝 | 91 | 詰み | 1658 | [CSA](data/csa/shogi5/krkqyboegd0p.csa) | [水匠5](data/analysis/reports/krkqyboegd0p.md) 逃1 大2 悪5 疑2 |
+| 2026-11-11 04:06 | 5分 | ☖後 | 相手(1881) | ● 負 | 69 | 投了 | 1661 | [CSA](data/csa/shogi5/k39cdwfwahmq.csa) | [水匠5](data/analysis/reports/k39cdwfwahmq.md) 逃0 大2 悪3 疑3 |
 | 2026-11-10 12:20 | 5分 | ☗先 | 相手(1493) | ○ 勝 | 89 | 詰み | 1657 | [CSA](data/csa/shogi5/sawpejzfp7r1.csa) | [水匠5](data/analysis/reports/sawpejzfp7r1.md) 逃0 大0 悪3 疑1 |
 | 2026-11-10 02:01 | 5分 | ☖後 | 相手(1949) | ● 負 | 101 | 時間切れ | 1659 | [CSA](data/csa/shogi5/sqjxvea27n7t.csa) | [水匠5](data/analysis/reports/sqjxvea27n7t.md) 逃1 大2 悪3 疑4 |
 | 2026-11-10 00:07 | 5分 | ☖後 | 相手(1430) | ● 負 | 119 | 時間切れ | 1669 | [CSA](data/csa/shogi5/zmnamldfi3g8.csa) | [水匠5](data/analysis/reports/zmnamldfi3g8.md) 逃2 大0 悪4 疑4 |
@@ -48,7 +48,7 @@
 | 評価関数 | 持ち時間 | 解析局数 | 自分の手数 | 詰み逃し | 大悪手 | 悪手 | 疑問手 | 悪手率 | 1局あたり悪手 |
 |---|---|--:|--:|--:|--:|--:|--:|--:|--:|
 | 水匠5 (`suisho5`) | 10分 | 2 | 67 | 0 | 2 | 2 | 7 | 6.0% | 2.00 |
-| 水匠5 (`suisho5`) | 5分 | 77 | 3140 | 26 | 172 | 195 | 159 | 11.7% | 4.77 |
+| 水匠5 (`suisho5`) | 5分 | 87 | 3572 | 28 | 195 | 229 | 189 | 11.9% | 4.87 |
 
 悪手率 = (大悪手 + 悪手) / 自分の手数。一覧: [`data/analysis/mistakes.csv`](data/analysis/mistakes.csv)
 
