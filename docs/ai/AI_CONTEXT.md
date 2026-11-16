@@ -3,8 +3,8 @@
 このファイルは生成 AI に対局傾向の分析を相談する際のインプット用です。リポジトリ構造・データ定義・現在の統計・実データのサンプルをまとめています。
 
 - 対象プレイヤー: `qwalks`
-- データ更新日時: 2026-11-16T01:43:00+09:00
-- 総対局数: 100（うち悪手検出済み 89）
+- データ更新日時: 2026-11-17T04:56:47+09:00
+- 総対局数: 111（うち悪手検出済み 89）
 
 ## 1. ファイル配置
 
@@ -66,22 +66,22 @@
 | time_mode | 局数 | 勝 | 負 | 分 | 勝率 | 平均手数 | 自レート範囲 | 最新レート | 期間 |
 |---|--:|--:|--:|--:|--:|--:|---|--:|---|
 | shogi10 | 2 | 2 | 0 | 0 | 100.0% | 66.5 | 1836〜1843 | 1843 | 2026-09-12 〜 2026-09-12 |
-| shogi5 | 98 | 44 | 54 | 0 | 44.9% | 82.6 | 1640〜1766 | 1642 | 2026-10-27 〜 2026-11-15 |
+| shogi5 | 109 | 51 | 58 | 0 | 46.8% | 81.6 | 1640〜1766 | 1660 | 2026-10-27 〜 2026-11-17 |
 
 ### ② time_mode × end_reason 別の勝敗件数
 
 | time_mode | end_reason | 勝 | 負 | 分 | 計 |
 |---|---|--:|--:|--:|--:|
 | shogi10 | 投了 | 2 | 0 | 0 | 2 |
-| shogi5 | 投了 | 23 | 20 | 0 | 43 |
-| shogi5 | 時間切れ | 4 | 23 | 0 | 27 |
-| shogi5 | 詰み | 16 | 10 | 0 | 26 |
+| shogi5 | 投了 | 27 | 22 | 0 | 49 |
+| shogi5 | 時間切れ | 5 | 25 | 0 | 30 |
+| shogi5 | 詰み | 18 | 10 | 0 | 28 |
 | shogi5 | 切断 | 1 | 1 | 0 | 2 |
 
 ### ③ ユニーク値一覧
 
-- `handicap`: `平手` (100)
-- `end_reason`: `投了` (45), `時間切れ` (27), `詰み` (26), `切断` (2)
+- `handicap`: `平手` (111)
+- `end_reason`: `投了` (51), `時間切れ` (30), `詰み` (28), `切断` (2)
 
 ## 4. 最新3件のデータサンプル
 
@@ -89,27 +89,27 @@
 
 ```csv
 game_id,time_mode,played_at,handicap,sente_name,sente_rating,gote_name,gote_rating,my_turn,my_rating,opponent_name,opponent_rating,result,moves_count,end_reason,csa_rel_path,csa_hash,fetched_at
-hm9k1flvfmqf,shogi5,2026-11-15 00:42:53,平手,qwalks,1642,相手,1663,SENTE,1642,相手,1663,WIN,83,詰み,data/csa/shogi5/hm9k1flvfmqf.csa,0e2567542b95f06b031836f0195b5adb870407f725afe72f7e6a6f7ce2dd4f8f,2026-11-15T01:15:49+09:00
-dfl6vvybuzqw,shogi5,2026-11-14 19:02:19,平手,qwalks,1649,相手,1593,SENTE,1649,相手,1593,LOSS,94,詰み,data/csa/shogi5/dfl6vvybuzqw.csa,5a32c615a654f1ad17bb5d63a6cbe0851278c4fc0de9f314a793415f4352999d,2026-11-15T01:15:47+09:00
-o402dz30yh03,shogi5,2026-11-14 18:50:28,平手,相手,1619,qwalks,1644,GOTE,1644,相手,1619,WIN,98,詰み,data/csa/shogi5/o402dz30yh03.csa,93c29123e69605b4fb8f73e095c8ed313b433273a25e8ba3f4556a4c9e5796b4,2026-11-15T01:15:45+09:00
+1d2x4flmctj7,shogi5,2026-11-17 04:08:50,平手,相手,1692,qwalks,1660,GOTE,1660,相手,1692,LOSS,105,時間切れ,data/csa/shogi5/1d2x4flmctj7.csa,3a833fe65a3ab3a0a0e6fdd4131b55e7b656b32111571dfd95f73c4dda352918,2026-11-17T04:56:47+09:00
+c320vrfsxsa5,shogi5,2026-11-17 03:59:28,平手,qwalks,1667,相手,1562,SENTE,1667,相手,1562,LOSS,66,投了,data/csa/shogi5/c320vrfsxsa5.csa,29ed1fe3a621979660a61bc49c8e8c122e16075b5b48ca110926e670acfab1ff,2026-11-17T04:56:45+09:00
+rptz2tfjacoi,shogi5,2026-11-17 03:32:29,平手,相手,1371,qwalks,1667,GOTE,1667,相手,1371,WIN,112,詰み,data/csa/shogi5/rptz2tfjacoi.csa,1ca591d03cf51128b578e7537e45e97d362da7b57597a8e8c165145614fcfb8b,2026-11-17T04:56:43+09:00
 ```
 
 ### 表
 
 | game_id | time_mode | played_at | handicap | sente_name | sente_rating | gote_name | gote_rating | my_turn | my_rating | opponent_name | opponent_rating | result | moves_count | end_reason | csa_rel_path | csa_hash | fetched_at |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| hm9k1flvfmqf | shogi5 | 2026-11-15 00:42:53 | 平手 | qwalks | 1642 | 相手 | 1663 | SENTE | 1642 | 相手 | 1663 | WIN | 83 | 詰み | data/csa/shogi5/hm9k1flvfmqf.csa | 0e2567542b95f06b031836f0195b5adb870407f725afe72f7e6a6f7ce2dd4f8f | 2026-11-15T01:15:49+09:00 |
-| dfl6vvybuzqw | shogi5 | 2026-11-14 19:02:19 | 平手 | qwalks | 1649 | 相手 | 1593 | SENTE | 1649 | 相手 | 1593 | LOSS | 94 | 詰み | data/csa/shogi5/dfl6vvybuzqw.csa | 5a32c615a654f1ad17bb5d63a6cbe0851278c4fc0de9f314a793415f4352999d | 2026-11-15T01:15:47+09:00 |
-| o402dz30yh03 | shogi5 | 2026-11-14 18:50:28 | 平手 | 相手 | 1619 | qwalks | 1644 | GOTE | 1644 | 相手 | 1619 | WIN | 98 | 詰み | data/csa/shogi5/o402dz30yh03.csa | 93c29123e69605b4fb8f73e095c8ed313b433273a25e8ba3f4556a4c9e5796b4 | 2026-11-15T01:15:45+09:00 |
+| 1d2x4flmctj7 | shogi5 | 2026-11-17 04:08:50 | 平手 | 相手 | 1692 | qwalks | 1660 | GOTE | 1660 | 相手 | 1692 | LOSS | 105 | 時間切れ | data/csa/shogi5/1d2x4flmctj7.csa | 3a833fe65a3ab3a0a0e6fdd4131b55e7b656b32111571dfd95f73c4dda352918 | 2026-11-17T04:56:47+09:00 |
+| c320vrfsxsa5 | shogi5 | 2026-11-17 03:59:28 | 平手 | qwalks | 1667 | 相手 | 1562 | SENTE | 1667 | 相手 | 1562 | LOSS | 66 | 投了 | data/csa/shogi5/c320vrfsxsa5.csa | 29ed1fe3a621979660a61bc49c8e8c122e16075b5b48ca110926e670acfab1ff | 2026-11-17T04:56:45+09:00 |
+| rptz2tfjacoi | shogi5 | 2026-11-17 03:32:29 | 平手 | 相手 | 1371 | qwalks | 1667 | GOTE | 1667 | 相手 | 1371 | WIN | 112 | 詰み | data/csa/shogi5/rptz2tfjacoi.csa | 1ca591d03cf51128b578e7537e45e97d362da7b57597a8e8c165145614fcfb8b | 2026-11-17T04:56:43+09:00 |
 
 ## 5. 最新 CSA 棋譜（1局分・全文）
 
-`data/csa/shogi5/hm9k1flvfmqf.csa`（2026-11-15 00:42:53 / shogi5 / 自分=SENTE / WIN）
+`data/csa/shogi5/1d2x4flmctj7.csa`（2026-11-17 04:08:50 / shogi5 / 自分=GOTE / LOSS）
 
 ```csa
 'Shogi Quest
-N+qwalks(1642)
-N-相手(1663)
+N+相手(1692)
+N-qwalks(1660)
 P1-KY-KE-GI-KI-OU-KI-GI-KE-KY
 P2 * -HI *  *  *  *  * -KA * 
 P3-FU-FU-FU-FU-FU-FU-FU-FU-FU
@@ -121,88 +121,110 @@ P8 * +KA *  *  *  *  * +HI *
 P9+KY+KE+GI+KI+OU+KI+GI+KE+KY
 +
 +7776FU
--8384FU
-+2726FU
 -3334FU
-+2625FU
--4132KI
-+6978KI
--2288UM
-+7988GI
--3142GI
-+8877GI
--2133KE
-+3948GI
--4344FU
++6766FU
+-8384FU
++2878HI
+-8485FU
++8877KA
+-7162GI
++7968GI
+-6364FU
++1716FU
+-1314FU
++5948OU
+-5142OU
++3938GI
+-4232OU
++6958KI
+-2324FU
 +4746FU
--4243GI
-+4847GI
--8242HI
-+4756GI
--5162OU
-+2524FU
--2324FU
-+2824HI
--0023FU
-+2428HI
--6272OU
-+5968OU
--4241HI
-+6879OU
--4121HI
-+7988OU
--2324FU
-+2848HI
+-3223OU
++3736FU
+-3132GI
++2937KE
+-6263GI
++6867GI
+-6354GI
++4839OU
+-9394FU
++2726FU
+-8262HI
++7868HI
+-7374FU
++6756GI
+-8173KE
++9998KY
+-6152KI
++3928OU
+-2244KA
++3827GI
+-6465FU
++7675FU
+-7475FU
++6665FU
+-7365KE
++7744KA
+-4344FU
++0084KA
+-6263HI
++0064FU
+-6364HI
++8475KA
+-6462HI
++7584KA
+-6263HI
++0064FU
+-6364HI
++8473UM
+-6463HI
++7363UM
+-5263KI
++5665GI
+-5465GI
++6865HI
+-0064FU
++6585HI
+-0047GI
++8582RY
+-4758NG
++4958KI
+-3435FU
++2625FU
 -2425FU
-+4645FU
--4445FU
-+0044FU
--4344GI
-+0066KA
--2141HI
-+6684KA
--2526FU
-+4828HI
--4121HI
-+4938KI
--0049KA
-+8466KA
--3243KI
-+3848KI
--4927UM
-+2827HI
--2627TO
-+0032KA
--4354KI
-+3221UM
--2738TO
-+4838KI
--0026HI
-+2154UM
--5354FU
-+0027FU
--2656HI
-+5756FU
--4453GI
++0024FU
+-2324OU
 +0022HI
--5362GI
-+6633UM
--4546FU
-+3334UM
--0032FU
-+0084KE
--7282OU
-+3461UM
--0072GI
-+8472NK
--7172GI
-+6162UM
--0014KA
-+0084HI
--0083FU
-+0071GI
--8292OU
-+0082KI
+-0023KI
++8232RY
+-4132KI
++2232RY
+-2133KE
++3725KE
+-3325KE
++3235RY
+-2413OU
++3525RY
+-0024FU
++2535RY
+-0034FU
++3544RY
+-0025KE
++0026GI
+-0049HI
++0039KI
+-0037KA
++2838OU
+-4939RY
++3839OU
+-0028KA
++3938OU
+-0039KI
++3847OU
+-3746UM
++4446RY
+-2846UM
++4746OU
 ```
 
 ## 6. 悪手検出データ（analyze_mistakes.py: 将棋AIによる悪手・疑問手の抽出）
