@@ -1,0 +1,4 @@
+ply,mover,is_my_move,move_usi,move_ja,best_usi,best_ja,eval,winrate,winrate_drop,category,model_id
+0,,,,,,,-95,0.4605,,,suisho5
+1,SENTE,0,8g8f,▲８六歩(87),2g2f,▲２六歩(27),+410,0.6645,,,suisho5
+2,GOTE,1,8c8d,△８四歩(83),8c8d,△８四歩(83),+324,0.6318,0.0327,,suisho5
